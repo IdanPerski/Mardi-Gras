@@ -1,0 +1,36 @@
+body {
+    background-color: $backColor;
+
+    header {
+
+        border: solid 1px;
+        font-family: 'externalFont1';
+        /* height: 50px; */
+        background-image: linear-gradient(to left, rgba(140, 191, 63, .6), rgba(140, 191, 63, .6), rgba(242, 204, 15, .6), rgba(148, 83, 166, .6), rgba(148, 83, 166, .6));
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+
+
+        .divLogo {
+            margin: auto;
+            /* width: 25%; */
+        }
+
+        .logo {
+            display: block;
+            margin: auto;
+            height: 120px;
+
+        }
+
+    }
+}
+
+
+a:hover {
+
+    font-weight: bold;
+    transition: 300ms;
+
+}

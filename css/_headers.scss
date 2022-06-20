@@ -1,0 +1,28 @@
+.textHeader h3 {
+    margin-top: 0;
+    color: $yellow;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    font-size: 2em;
+
+}
+
+
+.PageHeader {
+
+    margin: auto;
+    padding: 4px;
+    margin-top: 10px;
+    font-family: 'externalFont2';
+    text-align: center;
+    width: 90%;
+    color: var(--color-5);
+
+}
+
+.myHeader {
+    margin: 55px auto 8px auto;
+    color: var(--color-4);
+    text-shadow: 1px 0 0 var(--color-1), -2px 0 0 var(--color-1), 0 2px 0 var(--color-1), 0 -2px 0 var(--color-1), 1px 1px var(--color-1), -1px -1px 0 var(--color-1), 1px -1px 0 var(--color-1), -1px 1px 0 var(--color-1);
+    text-align: center;
+}

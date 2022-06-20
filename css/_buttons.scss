@@ -1,0 +1,12 @@
+.myBtn {
+    display: block;
+    margin: auto;
+    background-color: $purple;
+    border: $black solid 1px;
+    box-shadow: 2px 1px 15px rgba(0, 0, 0, 0.7);
+    padding: 0 10px;
+    &:hover{
+        color: $green;
+    font-weight: bold;
+    }
+}

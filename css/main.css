@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "externalFont1";
+  src: url(./fonts/HennyPenny-Regular.ttf);
+}
+@font-face {
+  font-family: "externalFont2";
+  src: url(./fonts/Pattaya-Regular.ttf);
+}
+body {
+  background-color: #FDF8E5;
+}
+body header {
+  border: solid 1px;
+  font-family: "externalFont1";
+  /* height: 50px; */
+  background-image: linear-gradient(to left, rgba(140, 191, 63, 0.6), rgba(140, 191, 63, 0.6), rgba(242, 204, 15, 0.6), rgba(148, 83, 166, 0.6), rgba(148, 83, 166, 0.6));
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+body header .divLogo {
+  margin: auto;
+  /* width: 25%; */
+}
+body header .logo {
+  display: block;
+  margin: auto;
+  height: 120px;
+}
+
+a:hover {
+  font-weight: bold;
+  transition: 300ms;
+}
+
+.myBtn {
+  display: block;
+  margin: auto;
+  background-color: #9453a6;
+  border: #0d0d0d solid 1px;
+  box-shadow: 2px 1px 15px rgba(0, 0, 0, 0.7);
+  padding: 0 10px;
+}
+.myBtn:hover {
+  color: #8cbf3f;
+  font-weight: bold;
+}
+
+.navList-m {
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  /* top: 155px; */
+  height: 92vh;
+  width: 100%;
+  /* opacity: 0.97; */
+  background-image: linear-gradient(to left, rgba(140, 191, 63, 0.9), #9453a6);
+  border: solid 1px #f2cc0f;
+  transform: translateX(-102%);
+  transition: 0.75s ease-in;
+  z-index: 99;
+}
+
+.navActive {
+  transform: translateX(0%);
+}
+
+.navPageLink {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #f2f2f2;
+  letter-spacing: 2px;
+  transition: all 0.4s;
+}
+.navPageLink:hover {
+  font-weight: bold;
+  color: #f2cc0f;
+}
+
+.menuImg {
+  position: relative;
+  display: block;
+  height: 15%;
+}
+
+.burger {
+  border: var(--color-1) solid 2px;
+  background-color: var(--color-2);
+  padding: 2px;
+  margin-top: 70px;
+  margin-right: 4px;
+  float: right;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.burger:hover {
+  background-color: var(--color-3);
+  transition: 0.3s;
+  transition-delay: 70ms;
+}
+
+.line {
+  background-color: var(--color-5);
+  width: 27px;
+  height: 3px;
+  margin: 5px;
+}
+
+.clearFloat {
+  clear: both;
+}/*# sourceMappingURL=main.css.map */
