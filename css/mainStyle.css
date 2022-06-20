@@ -1,0 +1,532 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-1: #0d0d0d;
+    --color-2: #f2f2f2;
+    --color-3: #f2cc0f;
+    --color-4: #8cbf3f;
+    --color-5: #9453a6;
+    --color-6: #FDF8E5;
+
+}
+
+body {
+    background-color: var(--color-6);
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto',
+        sans-serif;
+}
+
+@font-face {
+    font-family: 'externalFont1';
+    src: url(./fonts/HennyPenny-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'externalFont2';
+    src: url(./fonts/Pattaya-Regular.ttf);
+}
+
+
+.myBtn {
+    display: block;
+    margin: auto;
+    background-color: var(--color-5);
+    border: var(--color-1) solid 1px;
+    box-shadow: 2px 1px 15px rgba(0, 0, 0, 0.7);
+    padding: 0 10px;
+
+}
+
+.myBtn:hover {
+    color: var(--color-4);
+    font-weight: bold;
+
+}
+
+
+
+header {
+
+    border: solid 1px;
+    font-family: 'externalFont1';
+
+    background-image: url(../img/hdrbckgrn.png);
+    background-attachment: fixed;
+    background-position: center;
+    /* background-repeat: repeat-x; */
+    background-size: cover;
+    border: solid;
+
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    height: 120px;
+
+}
+
+
+
+.divLogo {
+    margin: auto;
+    width: 25%;
+}
+
+.textHeader {
+    text-shadow: 1px 0 0 var(--color-1),
+        -2px 0 0 var(--color-1),
+        0 2px 0 var(--color-1),
+        0 -2px 0 var(--color-1),
+        1px 1px var(--color-1),
+        -1px -1px 0 var(--color-1),
+        1px -1px 0 var(--color-1),
+        -1px 1px 0 var(--color-1);
+    text-align: center;
+    color: var(--color-3);
+    letter-spacing: 3px;
+    margin-bottom: 0;
+    font-size: 8vh;
+    /* display: none; */
+
+
+}
+
+.textHeader h3 {
+    margin-top: 0;
+    color: var(--color-3);
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    font-size: 2vh;
+
+}
+
+
+a:hover {
+
+    font-weight: bold;
+    transition: 300ms;
+
+}
+
+.PageHeader {
+
+    margin: auto;
+    padding: 4px;
+    margin-top: 10px;
+    font-family: 'externalFont2';
+    text-align: center;
+    width: 90%;
+    color: var(--color-5);
+
+}
+
+.myHeader {
+    margin: 55px auto 8px auto;
+    color: var(--color-4);
+    text-shadow: 1px 0 0 var(--color-1), -2px 0 0 var(--color-1), 0 2px 0 var(--color-1), 0 -2px 0 var(--color-1), 1px 1px var(--color-1), -1px -1px 0 var(--color-1), 1px -1px 0 var(--color-1), -1px 1px 0 var(--color-1);
+    text-align: center;
+}
+
+
+/*//////////// MOBILE MENU////////// */
+.navList-m {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+
+    /* top: 155px; */
+    height: 92vh;
+    width: 100%;
+    opacity: 0.97;
+
+    background-image: linear-gradient(var(--color-4), var(--color-5));
+    border: solid 1px var(--color-3);
+    transform: translateX(-102%);
+    transition: 0.75s ease-in;
+    z-index: 99;
+}
+
+
+.navActive {
+    transform: translateX(0%);
+
+
+
+}
+
+.nav-m {
+
+    font-family: "externalFont1";
+    background-image: linear-gradient(to right, var(--color-5), var(--color-4), var(--color-5));
+    border: solid 1px;
+
+}
+
+.navPageLink {
+
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--color-2);
+    letter-spacing: 2px;
+
+}
+
+.navPageLink:hover {
+    font-weight: bold;
+    color: var(--color-3);
+}
+
+.menuImg {
+    position: relative;
+    display: block;
+    height: 15%
+}
+
+.burger {
+    border: var(--color-1) solid 2px;
+    background-color: var(--color-2);
+    padding: 2px;
+    margin: 4px;
+    float: right;
+    opacity: 0.8;
+    cursor: pointer;
+
+}
+
+.line {
+    background-color: var(--color-5);
+    width: 27px;
+    height: 3px;
+    margin: 5px;
+}
+
+
+
+.burger:hover {
+    background-color: var(--color-4);
+    color: var(--color-4);
+    /* border-color: var(--color-1) 2px; */
+    transition: 400ms;
+    transition-delay: 80ms;
+}
+
+
+
+
+.clearFloat {
+    clear: both;
+}
+
+/*/////// END of mobile menu///////*/
+
+.mainContainer {
+
+    margin: auto;
+    width: 100%;
+
+}
+
+
+.carusel {
+    display: none;
+}
+
+.mobileImg {
+    position: relative;
+    height: 70vh;
+    margin: 5px;
+
+
+}
+
+.triviaDiv {
+    min-height: 100px;
+    max-height: 150px;
+
+}
+
+
+
+/* ////////.experiance New-orleans////// */
+
+.attImg {
+    padding: 10px 20px 0px 20px;
+}
+
+.experiance>div {
+
+    background-position: center;
+    background-size: cover;
+    display: block;
+    height: 100px;
+    width: 30%;
+    margin: 10px;
+    font-family: "externalFont2";
+    letter-spacing: 1px;
+    font-size: 2px;
+
+
+}
+
+.experiance {
+    display: flex;
+    /* justify-content: space-evenly; */
+    margin: auto;
+}
+
+.experiance-Header {
+    font-size: 1.2em;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.hotelBox {
+
+    background-image: url(../img/transpMask.png);
+}
+
+.restBox {
+    background-image: url(../img/trnsp1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.attBox {
+
+    background-image: url(../img/masks/istockphoto-165966914-170667a.jpg);
+}
+
+
+.bonusCont {
+    background-image: url(../img/unused/Carnival_Mask_Transparent_Image.png);
+    margin: 35px auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "externalFont2";
+    min-height: 90px
+}
+
+
+
+
+.textSection:hover {
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--color-3);
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+
+
+}
+
+
+.textSection {
+    margin-top: 40px;
+    color: #f2f2f2;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease-in-out;
+}
+
+
+footer {
+    background-image: linear-gradient(to left, var(--color-4), var(--color-6), var(--color-6), var(--color-4), var(--color-6), var(--color-6));
+    border: solid 1px;
+    margin-top: 10px;
+}
+
+
+footer>div {
+
+    flex-grow: 1;
+    flex-basis: 33%;
+
+}
+
+
+.social {
+
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: auto;
+
+
+}
+
+
+.fa-brands,
+.fa {
+    color: var(--color-1);
+
+    font-size: 225% !important;
+
+
+}
+
+
+
+
+.fa-brands:hover,
+.fa:hover {
+    font-weight: bold;
+
+    transition: 300ms;
+}
+
+
+.copyrightText {
+    font-size: 12px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* //////////end of  footer//////////// */
+
+
+
+
+
+
+
+/* Small mobile */
+@media only screen and (max-width: 410px) {
+
+    .experiance-Header {
+        font-size: 1.3em;
+    }
+
+
+
+}
+
+
+/* Tablet/desktop */
+@media only screen and (min-width: 768px) {
+
+    .burger {
+        display: none;
+    }
+
+    .navList-m {
+        display: none;
+        transform: none;
+    }
+
+    .navActive {
+        transform: none;
+    }
+
+    .navPageLink:hover {
+        font-weight: bold;
+        color: var(--color-5);
+    }
+
+
+
+    .navList-t {
+        display: flex;
+        background-image: none;
+        position: revert;
+        flex-direction: row;
+        list-style: none;
+        height: revert;
+        transform: none;
+        transition: none;
+        border: none;
+        margin: auto;
+        width: 80%;
+        text-shadow: 1px 0 0 var(--color-1),
+            -2px 0 0 var(--color-1),
+            0 2px 0 var(--color-1),
+            0 -2px 0 var(--color-1),
+            1px 1px var(--color-1),
+            -1px -1px 0 var(--color-1),
+            1px -1px 0 var(--color-1),
+            -1px 1px 0 var(--color-1);
+        text-align: center;
+
+    }
+
+    .nav-t {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 40px;
+        transform: none;
+    }
+
+    .menuImg {
+        display: none;
+    }
+
+
+    .mainContainer {
+        margin: auto;
+
+    }
+
+
+
+    .carusel {
+        display: revert;
+    }
+
+    .crsl-imgText {
+
+        padding: 0px;
+        width: 50%;
+    }
+
+    .experiance {
+        width: 80%;
+
+
+    }
+
+
+
+
+    .mobileImg {
+        display: none;
+    }
+
+
+
+
+    .social {
+        margin-top: 20px;
+        width: 50%;
+
+    }
+
+
+
+
+}
+
+@media only screen and (min-width: 992px) {
+
+    .experiance {
+        width: 70%;
+
+
+    }
+}

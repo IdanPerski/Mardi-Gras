@@ -1,0 +1,54 @@
+.gallery{
+      display: grid;
+    grid: auto / repeat(auto-fit, minmax(15em, 1fr));
+    grid-gap: 1em;
+    background-image: linear-gradient(var(--color-3),var(--color-4),var(--color-3));
+    padding: 6em 3em;
+    border: solid 1px;
+    box-shadow: 2px 2px 15px rgb(0 0 0 / 80%);
+}
+
+.gallery-item img, iframe {
+max-height: 100%;
+max-width: 100%;
+padding: 2px;
+border: solid 3px var(--color-5);
+box-shadow: 2px 1px 15px rgba(0, 0, 0, 0.7);
+cursor: pointer;
+
+}
+
+
+
+#modalIMage{
+
+    width:100%;
+}
+
+
+.mediaContainer{
+    width: 80%;
+}
+
+
+
+@media only screen and (min-width: 768px){
+
+
+
+
+
+
+
+
+
+
+}
+
+
+@media only screen and (min-width: 1200px){
+
+
+
+    
+}

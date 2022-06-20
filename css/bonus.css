@@ -1,0 +1,115 @@
+
+.triviaLink{
+    margin-top: 20px!important;
+        font-size: 1.50rem;
+}
+
+.triviaLink:hover{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.triviaHeader{
+    font-size: 2.5rem;
+}
+
+.triviaImg{
+     
+  background-position: center;
+  
+  background-repeat: no-repeat;
+   object-fit:contain;
+    min-height:400px;
+    
+    
+
+}
+
+.cover-image0{
+    background-image: url(../img/trvia/poster.jpg);
+
+  opacity: 1;
+ transition: ease-in 600ms linear;
+     
+   
+    
+}
+.cover-image1{
+    background-image: url(../img/trvia/poster2.jpg);
+}
+
+.cover-image2{
+    background-image: url(../img/trvia/poster3.jpg);
+}
+.cover-image3{
+    background-image: url(../img/trvia/poster4.jpg);
+}
+.cover-image4{background-image: url(../img/trvia/poster5.jpg);
+}
+.cover-image5{
+    background-image: url(../img/trvia/poster6.jpg);
+     background-size: cover;
+}
+.cover-image6{
+    background-image: url(../img/trvia/poster7.jpg);
+    
+   
+}
+.cover-image7{
+     background-image: url(../img/trvia/poster8.webp);
+      
+}
+.cover-image8{
+    background-image: url(../img/trvia/poster9.jpg);
+    background-size: cover;
+}
+.cover-image9{
+    background-image: url(../img/trvia/poster10.jpg);
+}
+
+/* .cover-image10{} */
+
+.questionDiv{
+     background-color: rgba(253, 248, 229, 0.450); 
+     color: var(--color-1);
+}
+
+
+
+.myProgressBar{
+  
+    background-color: #9453a6;
+    color:var(--color-4);
+
+}
+
+
+.quizText{
+
+     text-shadow: 1px 0 0 var(--color-1),
+        -2px 0 0 var(--color-1),
+        0 2px 0 var(--color-1),
+        0 -2px 0 var(--color-1),
+        1px 1px var(--color-1),
+        -1px -1px 0 var(--color-1),
+        1px -1px 0 var(--color-1),
+        -1px 1px 0 var(--color-1);
+    text-align: center;
+       color: var(--color-3);
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-family: externalFont2;
+}
+
+/* .quizAnswer{
+    
+} */
+
+
+@media only screen and (min-width: 768px) {
+
+
+
+
+
+}

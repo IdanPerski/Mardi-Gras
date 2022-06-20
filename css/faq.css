@@ -1,0 +1,50 @@
+.accordion{
+    margin: 40px;
+    opacity: 0.9;
+    
+}
+
+.faqContainer{
+    background-image: url(../img/unused/trnsp2.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.accordion-item{
+    border: solid var(--color-5);
+     /* background-image: linear-gradient(to left, var(--color-5), var(--color-6), var(--color-6), var(--color-4), var(--color-6), var(--color-3));  */
+     background-color: rgba(255, 255, 255,0.9 );
+     margin: auto
+     
+}
+
+
+.myAcc-collapsed{
+    
+    background-color: var(--color-6);
+  
+}
+
+.faqHeader{
+    color: var(--color-3);
+padding: 0;
+width: 25%;
+/* background-color: rgba(253, 248, 229, 0.75);  */
+}
+
+.accordion-body{
+    color: var(--color-1);
+    text-decoration: none;
+}
+
+
+.faq-text{
+      background-color: rgba(253, 248, 229, 0.75); 
+         margin: auto;
+         word-spacing: 2px;
+         line-height: 25px;
+         color: var(--color-1);
+         font-size: 17px;
+         padding: 20px;
+}
