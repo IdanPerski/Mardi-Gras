@@ -1,0 +1,172 @@
+ header {
+
+     border: solid 1px;
+     font-family: 'externalFont1';
+     /* height: 50px; */
+     background-image: linear-gradient(to left, rgba(140, 191, 63, .6), rgba(140, 191, 63, .6), rgba(242, 204, 15, .6), rgba(148, 83, 166, .6), rgba(148, 83, 166, .6));
+     background-attachment: fixed;
+     background-position: center;
+     background-size: cover;
+
+
+     .divLogo {
+         margin: auto;
+
+         .logo {
+             display: block;
+             margin: auto;
+             height: 120px;
+
+         }
+     }
+ }
+
+ ///////Mobile//////
+ .navList-m {
+     display: flex;
+     justify-content: space-evenly;
+     position: absolute;
+     flex-direction: column;
+     align-items: center;
+     list-style: none;
+     /* top: 155px; */
+     height: 92vh;
+     width: 100%;
+     /* opacity: 0.97; */
+     background-image: linear-gradient(to left, rgba(140, 191, 63, .9), $purple);
+     border: solid 1px $yellow;
+     transform: translateX(-102%);
+     transition: 0.75s ease-in;
+     z-index: 99;
+ }
+
+
+ .navActive {
+     transform: translateX(0%);
+
+ }
+
+
+
+ .navPageLink {
+
+     text-decoration: none;
+     font-size: 1.2em;
+     color: $white;
+     letter-spacing: 2px;
+     transition: all 0.25s;
+
+     &:hover {
+         font-weight: bold;
+         color: $yellow;
+     }
+ }
+
+
+
+ .menuImg {
+     position: relative;
+     display: block;
+     height: 15%
+ }
+
+ .burger {
+     position: relative;
+     top: -28px;
+     border: $black solid 1px;
+     background-color: $white;
+     padding: 2px;
+     margin-right: 4px;
+     float: right;
+     opacity: 0.8;
+     cursor: pointer;
+
+     &:hover {
+         background-color: $yellow;
+         transition: 0.3s;
+         transition-delay: 70ms;
+     }
+
+ }
+
+ .line {
+     background-color: $purple;
+     width: 20px;
+     height: 0.15em;
+     margin: 2px;
+ }
+
+
+
+ .clearFloat {
+     clear: both;
+ }
+
+
+ @media only screen and (min-width: 768px) {
+     header {
+         height: 80px;
+         display: flex;
+
+         .divLogo {
+             position: relative;
+             left: 25px;
+             margin-top: 3px;
+             max-height: 100px;
+             z-index: 99;
+
+
+             .logo {
+                 display: block;
+                 margin: auto;
+                 height: 120px;
+
+             }
+         }
+     }
+
+     .navList-m {
+         display: none;
+         transform: none;
+     }
+
+     .navActive {
+         transform: none;
+     }
+
+     .nav-t {
+
+         width: 85vw;
+
+     }
+
+     .navList-t {
+         display: flex;
+         background-image: none;
+         justify-content: space-evenly;
+         flex-direction: row;
+         list-style: none;
+         height: 80px;
+         transform: none;
+         transition: none;
+         border: none;
+         width: 85vw;
+         text-shadow: 1px 0 0 $black,
+             -2px 0 0 $black,
+             0 2px 0 $black,
+             0 -2px 0 $black,
+             1px 1px $black,
+             -1px -1px 0 $black,
+             1px -1px 0 $black,
+             -1px 1px 0 $black;
+         text-align: center;
+         font-size: 0.9rem;
+
+     }
+
+     .menuImg {
+         display: none;
+     }
+
+
+ }

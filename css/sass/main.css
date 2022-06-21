@@ -12,10 +12,7 @@
   font-family: "externalFont2";
   src: url(./fonts/Pattaya-Regular.ttf);
 }
-body {
-  background-color: #FDF8E5;
-}
-body header {
+header {
   border: solid 1px;
   font-family: "externalFont1";
   /* height: 50px; */
@@ -24,32 +21,13 @@ body header {
   background-position: center;
   background-size: cover;
 }
-body header .divLogo {
+header .divLogo {
   margin: auto;
-  /* width: 25%; */
 }
-body header .logo {
+header .divLogo .logo {
   display: block;
   margin: auto;
   height: 120px;
-}
-
-a:hover {
-  font-weight: bold;
-  transition: 300ms;
-}
-
-.myBtn {
-  display: block;
-  margin: auto;
-  background-color: #9453a6;
-  border: #0d0d0d solid 1px;
-  box-shadow: 2px 1px 15px rgba(0, 0, 0, 0.7);
-  padding: 0 10px;
-}
-.myBtn:hover {
-  color: #8cbf3f;
-  font-weight: bold;
 }
 
 .navList-m {
@@ -79,7 +57,7 @@ a:hover {
   font-size: 1.2em;
   color: #f2f2f2;
   letter-spacing: 2px;
-  transition: all 0.4s;
+  transition: all 0.25s;
 }
 .navPageLink:hover {
   font-weight: bold;
@@ -93,28 +71,244 @@ a:hover {
 }
 
 .burger {
-  border: var(--color-1) solid 2px;
-  background-color: var(--color-2);
+  position: relative;
+  top: -28px;
+  border: #0d0d0d solid 1px;
+  background-color: #f2f2f2;
   padding: 2px;
-  margin-top: 70px;
   margin-right: 4px;
   float: right;
   opacity: 0.8;
   cursor: pointer;
 }
 .burger:hover {
-  background-color: var(--color-3);
+  background-color: #f2cc0f;
   transition: 0.3s;
   transition-delay: 70ms;
 }
 
 .line {
-  background-color: var(--color-5);
-  width: 27px;
-  height: 3px;
-  margin: 5px;
+  background-color: #9453a6;
+  width: 20px;
+  height: 0.15em;
+  margin: 2px;
 }
 
 .clearFloat {
   clear: both;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    height: 80px;
+    display: flex;
+  }
+  header .divLogo {
+    position: relative;
+    left: 25px;
+    margin-top: 3px;
+    max-height: 100px;
+    z-index: 99;
+  }
+  header .divLogo .logo {
+    display: block;
+    margin: auto;
+    height: 120px;
+  }
+
+  .navList-m {
+    display: none;
+    transform: none;
+  }
+
+  .navActive {
+    transform: none;
+  }
+
+  .nav-t {
+    width: 85vw;
+  }
+
+  .navList-t {
+    display: flex;
+    background-image: none;
+    justify-content: space-evenly;
+    flex-direction: row;
+    list-style: none;
+    height: 80px;
+    transform: none;
+    transition: none;
+    border: none;
+    width: 85vw;
+    text-shadow: 1px 0 0 #0d0d0d, -2px 0 0 #0d0d0d, 0 2px 0 #0d0d0d, 0 -2px 0 #0d0d0d, 1px 1px #0d0d0d, -1px -1px 0 #0d0d0d, 1px -1px 0 #0d0d0d, -1px 1px 0 #0d0d0d;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .menuImg {
+    display: none;
+  }
+}
+body {
+  background-color: #FDF8E5;
+}
+
+a:hover {
+  font-weight: bold;
+  transition: 300ms;
+}
+
+.mainContainer {
+  margin: auto;
+  width: 100%;
+}
+.mainContainer .carusel {
+  display: none;
+  /* mobile only */
+}
+.mainContainer .mobileImg {
+  position: relative;
+  height: 70vh;
+  /* mobile only */
+}
+
+.attImg {
+  padding: 10px 20px 0px 20px;
+}
+
+.experiance > div {
+  background-position: center;
+  background-size: cover;
+  display: block;
+  height: 100px;
+  width: 30%;
+  margin: 10px;
+  font-family: "externalFont2";
+  letter-spacing: 1px;
+  font-size: 2px;
+}
+
+.experiance {
+  display: flex;
+  /* justify-content: space-evenly; */
+  margin: auto;
+}
+
+.experiance-Header {
+  font-size: 1.2em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hotelBox {
+  background-image: url(../../img/transpMask.png);
+}
+
+.restBox {
+  background-image: url(../../img/trnsp1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.attBox {
+  background-image: url(../../img/masks/istockphoto-165966914-170667a.jpg);
+}
+
+.bonusCont {
+  background-image: url(../../img/unused/Carnival_Mask_Transparent_Image.png);
+  margin: 35px auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "externalFont2";
+  min-height: 90px;
+}
+.bonusCont .triviaDiv {
+  min-height: 100px;
+  max-height: 150px;
+  width: 90vw;
+}
+
+.textSection {
+  margin-top: 40px;
+  color: #f2f2f2;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.5s ease-in-out;
+  overflow: hidden;
+}
+.textSection:hover {
+  cursor: pointer;
+  font-weight: bold;
+  color: #f2cc0f;
+  padding-top: 5px;
+  margin-top: 35px;
+  padding-bottom: 5px;
+}
+
+footer {
+  background-image: linear-gradient(to left, #8cbf3f, #f2cc0f, #9453a6, #8cbf3f, #f2cc0f, #9453a6);
+  border: solid 1px;
+  margin-top: 10px;
+  height: 12vh;
+}
+footer .social {
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+  margin: auto;
+}
+footer .social div {
+  flex-grow: 1;
+  flex-basis: 33%;
+}
+footer .social .fa-brands,
+footer .social .fa {
+  color: #0d0d0d;
+  margin-top: 10px;
+  font-size: 175% !important;
+}
+footer .social .fa-brands:hover,
+footer .social .fa:hover {
+  font-weight: bold;
+  transition: 300ms;
+}
+footer .copyrightText {
+  font-size: 0.7rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .mainContainer {
+    margin: auto;
+  }
+  .mainContainer .carusel {
+    display: revert;
+  }
+  .mainContainer .carusel .crsl-imgText {
+    padding: 0px;
+    width: 50%;
+  }
+  .mainContainer .experiance {
+    width: 80%;
+  }
+  .mainContainer .mobileImg {
+    display: none;
+  }
+}
+.myBtn {
+  display: block;
+  margin: auto;
+  background-color: #9453a6;
+  border: #0d0d0d solid 1px;
+  box-shadow: 2px 1px 15px rgba(0, 0, 0, 0.7);
+  padding: 0 10px;
+}
+.myBtn:hover {
+  color: #8cbf3f;
+  font-weight: bold;
 }/*# sourceMappingURL=main.css.map */

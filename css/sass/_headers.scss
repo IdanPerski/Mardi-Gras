@@ -22,7 +22,31 @@
 
 .myHeader {
     margin: 55px auto 8px auto;
-    color: var(--color-4);
-    text-shadow: 1px 0 0 var(--color-1), -2px 0 0 var(--color-1), 0 2px 0 var(--color-1), 0 -2px 0 var(--color-1), 1px 1px var(--color-1), -1px -1px 0 var(--color-1), 1px -1px 0 var(--color-1), -1px 1px 0 var(--color-1);
+    color: $green;
+    text-shadow: 1px 0 0 $black,
+        -2px 0 0 $black,
+        0 2px 0 $black,
+        0 -2px 0 $black,
+        1px 1px $black,
+        -1px -1px 0 $black,
+        1px -1px 0 $black,
+        -1px 1px 0 $black;
     text-align: center;
+}
+
+.textHeader {
+    text-shadow: 1px 0 0 $black,
+        -2px 0 0 $black,
+        0 2px 0 $black,
+        0 -2px 0 $black,
+        1px 1px $black,
+        -1px -1px 0 $black,
+        1px -1px 0 $black,
+        -1px 1px 0 $black;
+    text-align: center;
+    color: $yellow;
+    letter-spacing: 3px;
+    margin-bottom: 0;
+    font-size: 8vh;
+
 }

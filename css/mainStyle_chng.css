@@ -187,7 +187,7 @@ a:hover {
     font-size: 1.2em;
     color: var(--color-2);
     letter-spacing: 2px;
-    transition: all 0.4s;
+    transition: all 0.25s;
 
 }
 
@@ -204,7 +204,7 @@ a:hover {
 
 .burger {
     position: relative;
-    top: -35px;
+    top: -28px;
     border: var(--color-1) solid 1px;
     background-color: var(--color-2);
     padding: 2px;
@@ -262,11 +262,7 @@ a:hover {
 
 }
 
-.triviaDiv {
-    min-height: 100px;
-    max-height: 150px;
 
-}
 
 
 
@@ -334,6 +330,11 @@ a {
     min-height: 90px
 }
 
+.triviaDiv {
+    min-height: 100px;
+    max-height: 150px;
+
+}
 
 
 
@@ -449,13 +450,21 @@ footer>div {
     }
 
     .divLogo {
-        margin: 5px;
+        position: relative;
+        left: 25px;
+        margin-top: 3px;
         max-height: 100px;
+        z-index: 99;
     }
 
     .logo {
-        height: 70px;
+        display: block;
+        height: 12vh;
+        transform: scale(1.7) translate(25%, 25%);
+        transition: transform 0.4s ease;
+        z-index: 99;
     }
+
 
     .navList-m {
         display: none;
@@ -476,15 +485,15 @@ footer>div {
     .navList-t {
         display: flex;
         background-image: none;
-        /* position: revert; */
+        justify-content: space-evenly;
         flex-direction: row;
         list-style: none;
-        max-height: 100px;
+        height: 80px;
         transform: none;
         transition: none;
         border: none;
-        margin: auto;
-        width: 100%;
+        /* margin: auto; */
+        width: 85vw;
         text-shadow: 1px 0 0 var(--color-1),
             -2px 0 0 var(--color-1),
             0 2px 0 var(--color-1),
@@ -494,16 +503,22 @@ footer>div {
             1px -1px 0 var(--color-1),
             -1px 1px 0 var(--color-1);
         text-align: center;
+        font-size: 0.9rem;
 
     }
 
+    /* navBarList {
+        margin: 10px;
+    } */
+
     .nav-t {
         /* display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 40px;
-        transform: none; */
-        width: 100%;
+        justify-content: space-evenly;
+        align-items: center; */
+        /* height: 40px; */
+        /* transform: none; */
+        width: 85vw;
+
     }
 
     .menuImg {

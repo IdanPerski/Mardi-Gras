@@ -1,31 +1,8 @@
 body {
     background-color: $backColor;
-
-    header {
-
-        border: solid 1px;
-        font-family: 'externalFont1';
-        /* height: 50px; */
-        background-image: linear-gradient(to left, rgba(140, 191, 63, .6), rgba(140, 191, 63, .6), rgba(242, 204, 15, .6), rgba(148, 83, 166, .6), rgba(148, 83, 166, .6));
-        background-attachment: fixed;
-        background-position: center;
-        background-size: cover;
-
-
-        .divLogo {
-            margin: auto;
-            /* width: 25%; */
-        }
-
-        .logo {
-            display: block;
-            margin: auto;
-            height: 120px;
-
-        }
-
-    }
 }
+
+
 
 
 a:hover {
@@ -33,4 +10,184 @@ a:hover {
     font-weight: bold;
     transition: 300ms;
 
+}
+
+.mainContainer {
+
+    margin: auto;
+    width: 100%;
+
+    .carusel {
+        display: none;
+        /* mobile only */
+    }
+
+    .mobileImg {
+        position: relative;
+        height: 70vh;
+        /* mobile only */
+    }
+
+}
+
+.attImg {
+    padding: 10px 20px 0px 20px;
+}
+
+.experiance>div {
+
+    background-position: center;
+    background-size: cover;
+    display: block;
+    height: 100px;
+    width: 30%;
+    margin: 10px;
+    font-family: "externalFont2";
+    letter-spacing: 1px;
+    font-size: 2px;
+
+
+}
+
+.experiance {
+    display: flex;
+    /* justify-content: space-evenly; */
+    margin: auto;
+}
+
+.experiance-Header {
+    font-size: 1.2em;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.hotelBox {
+
+    background-image: url(../../img/transpMask.png);
+}
+
+.restBox {
+    background-image: url(../../img/trnsp1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.attBox {
+
+    background-image: url(../../img/masks/istockphoto-165966914-170667a.jpg);
+}
+
+
+.bonusCont {
+    background-image: url(../../img/unused/Carnival_Mask_Transparent_Image.png);
+    margin: 35px auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "externalFont2";
+
+    min-height: 90px;
+
+    .triviaDiv {
+        min-height: 100px;
+        max-height: 150px;
+        width: 90vw;
+
+    }
+}
+
+
+.textSection {
+    margin-top: 40px;
+    color: #f2f2f2;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+
+    &:hover {
+        cursor: pointer;
+        font-weight: bold;
+        color: $yellow;
+        padding-top: 5px;
+        margin-top: 35px;
+        padding-bottom: 5px;
+    }
+}
+
+
+footer {
+    background-image: linear-gradient(to left, $green, $yellow, $purple, $green, $yellow, $purple);
+    border: solid 1px;
+    margin-top: 10px;
+    height: 12vh;
+
+    .social {
+        display: flex;
+        justify-content: space-evenly;
+        width: 70%;
+        margin: auto;
+
+
+        div {
+            flex-grow: 1;
+            flex-basis: 33%;
+        }
+
+        .fa-brands,
+        .fa {
+            color: $black;
+            margin-top: 10px;
+            font-size: 175% !important;
+
+
+        }
+
+        .fa-brands:hover,
+        .fa:hover {
+            font-weight: bold;
+            transition: 300ms;
+        }
+    }
+
+    .copyrightText {
+        font-size: 0.7rem;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+    .mainContainer {
+        margin: auto;
+
+        .carusel {
+            display: revert;
+
+            .crsl-imgText {
+                padding: 0px;
+                width: 50%;
+            }
+        }
+
+        .experiance {
+            width: 80%;
+        }
+
+        .mobileImg {
+            display: none;
+        }
+
+
+
+
+    }
 }
