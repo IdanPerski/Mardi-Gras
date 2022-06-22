@@ -21,3 +21,13 @@ $backColor: #FDF8E5;
 $yellow: #f2cc0f; // rgb(242, 204, 15)
 $green: #8cbf3f; //  rgb(140, 191, 63)
 $purple: #9453a6; // rgb(148, 83, 166)
+
+
+$texShadow: 1px 0 0 $black,
+-1px 0 0 $black,
+0 1px 0 $black,
+0 -1px 0 $black,
+1px 1px $black,
+-1px 0px 0 $black,
+1px 0px 0 $black,
+;

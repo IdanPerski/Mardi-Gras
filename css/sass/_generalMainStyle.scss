@@ -4,8 +4,6 @@ body {
 }
 
 
-
-
 a:hover {
 
     font-weight: bold;
@@ -31,6 +29,16 @@ a:hover {
 
 }
 
+.textHeader {
+    text-shadow: $texShadow;
+    text-align: center;
+    color: $yellow;
+    letter-spacing: 3px;
+    margin-bottom: 0;
+    font-size: 2rem;
+
+}
+
 .attImg {
     padding: 10px 20px 0px 20px;
 }
@@ -41,12 +49,11 @@ a:hover {
     background-size: cover;
     display: block;
     height: 100px;
-    width: 30%;
+    width: 30vw;
     margin: 10px;
     font-family: "externalFont2";
     letter-spacing: 1px;
-    font-size: 2px;
-
+    // font-size: 1rem;
 
 }
 
@@ -57,7 +64,9 @@ a:hover {
 }
 
 .experiance-Header {
-    font-size: 1.2em;
+    font-size: 1.5rem;
+    font-family: "externalFont2";
+
 
 }
 
@@ -107,8 +116,9 @@ a {
     color: #f2f2f2;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
-    transition: 0.5s ease-in-out;
+    transition: 0.25s ease-in-out;
     overflow: hidden;
+
 
     &:hover {
         cursor: pointer;
@@ -117,6 +127,7 @@ a {
         padding-top: 5px;
         margin-top: 35px;
         padding-bottom: 5px;
+        text-shadow: $texShadow;
     }
 }
 
@@ -187,7 +198,10 @@ footer {
             display: none;
         }
 
-
+        .experiance>div {
+            width: 20vw;
+            margin: auto;
+        }
 
 
     }

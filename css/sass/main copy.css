@@ -8,26 +8,30 @@
   font-family: "externalFont1";
   src: url(./fonts/HennyPenny-Regular.ttf);
 }
+
 @font-face {
   font-family: "externalFont2";
   src: url(./fonts/Pattaya-Regular.ttf);
 }
+
 header {
   border: solid 1px;
   font-family: "externalFont1";
   /* height: 50px; */
-  background-image: linear-gradient(to left, rgba(140, 191, 63, 0.6), rgba(140, 191, 63, 0.6), rgba(242, 204, 15, 0.8), rgba(148, 83, 166, 0.6), rgba(148, 83, 166, 0.6));
+  background-image: linear-gradient(to left, rgba(140, 191, 63, 0.6), rgba(140, 191, 63, 0.6), rgba(242, 204, 15, 0.6), rgba(148, 83, 166, 0.6), rgba(148, 83, 166, 0.6));
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
 }
+
 header .divLogo {
   margin: auto;
 }
+
 header .divLogo .logo {
   display: block;
-  margin: 8px auto;
-  height: 12vh;
+  margin: auto;
+  height: 120px;
 }
 
 .navList-m {
@@ -59,6 +63,7 @@ header .divLogo .logo {
   letter-spacing: 2px;
   transition: all 0.25s;
 }
+
 .navPageLink:hover {
   font-weight: bold;
   color: #f2cc0f;
@@ -76,11 +81,12 @@ header .divLogo .logo {
   border: #0d0d0d solid 1px;
   background-color: #f2f2f2;
   padding: 2px;
-  margin-right: 20px;
+  margin-right: 4px;
   float: right;
   opacity: 0.8;
   cursor: pointer;
 }
+
 .burger:hover {
   background-color: #f2cc0f;
   transition: 0.3s;
@@ -99,30 +105,23 @@ header .divLogo .logo {
 }
 
 @media only screen and (min-width: 768px) {
-  .burger {
-    display: none !important;
-  }
-
   header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 99;
     height: 80px;
     display: flex;
-    background-image: linear-gradient(to left, rgba(140, 191, 63, 0.8), rgba(140, 191, 63, 0.8), rgba(242, 204, 15, 0.8), rgba(148, 83, 166, 0.8), rgba(148, 83, 166, 0.8));
   }
+
   header .divLogo {
+    position: relative;
+    left: 25px;
     margin-top: 3px;
     max-height: 100px;
+    z-index: 99;
   }
+
   header .divLogo .logo {
     display: block;
-    margin-left: 80px;
-    position: relative;
-    height: 15vh;
-    transition: 0.4s ease-in-out;
-    z-index: 99;
+    margin: auto;
+    height: 120px;
   }
 
   .navList-m {
@@ -134,11 +133,10 @@ header .divLogo .logo {
     transform: none;
   }
 
-  /*     .nav-t {
-     position: fixed;
-     top: 0;
+  .nav-t {
+    width: 85vw;
+  }
 
-   } */
   .navList-t {
     display: flex;
     background-image: none;
@@ -149,7 +147,7 @@ header .divLogo .logo {
     transform: none;
     transition: none;
     border: none;
-    width: 68vw;
+    width: 85vw;
     text-shadow: 1px 0 0 #0d0d0d, -2px 0 0 #0d0d0d, 0 2px 0 #0d0d0d, 0 -2px 0 #0d0d0d, 1px 1px #0d0d0d, -1px -1px 0 #0d0d0d, 1px -1px 0 #0d0d0d, -1px 1px 0 #0d0d0d;
     text-align: center;
     font-size: 0.9rem;
@@ -159,9 +157,9 @@ header .divLogo .logo {
     display: none;
   }
 }
+
 body {
   background-color: #FDF8E5;
-  overflow-x: hidden;
 }
 
 a:hover {
@@ -173,10 +171,12 @@ a:hover {
   margin: auto;
   width: 100%;
 }
+
 .mainContainer .carusel {
   display: none;
   /* mobile only */
 }
+
 .mainContainer .mobileImg {
   position: relative;
   height: 70vh;
@@ -187,7 +187,7 @@ a:hover {
   padding: 10px 20px 0px 20px;
 }
 
-.experiance > div {
+.experiance>div {
   background-position: center;
   background-size: cover;
   display: block;
@@ -214,32 +214,41 @@ a {
 }
 
 .hotelBox {
-  background-image: url(../../img/transpMask.png);
+  background-image: url(../img/transpMask.png);
+
 }
 
 .restBox {
-  background-image: url(../../img/trnsp1.png);
+  background-image: url(../img/trnsp1.png);
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .attBox {
-  background-image: url(../../img/masks/istockphoto-165966914-170667a.jpg);
+  background-image: url(../img/masks/istockphoto-165966914-170667a.jpg);
 }
 
 .bonusCont {
-  background-image: url(../../img/unused/Carnival_Mask_Transparent_Image.png);
+  background-image: url(../img/unused/Carnival_Mask_Transparent_Image.png);
   margin: 35px auto;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   font-family: "externalFont2";
   min-height: 90px;
 }
-.bonusCont .triviaDiv {
+
+.triviaDiv {
   min-height: 100px;
   max-height: 150px;
-  width: 90vw;
+}
+
+.textSection:hover {
+  cursor: pointer;
+  font-weight: bold;
+  color: #f2cc0f;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .textSection {
@@ -248,69 +257,31 @@ a {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
   transition: 0.5s ease-in-out;
-  overflow: hidden;
-}
-.textSection:hover {
-  cursor: pointer;
-  font-weight: bold;
-  color: #f2cc0f;
-  padding-top: 5px;
-  margin-top: 35px;
-  padding-bottom: 5px;
-}
-
-footer {
-  background-image: linear-gradient(to left, #8cbf3f, #f2cc0f, #9453a6, #8cbf3f, #f2cc0f, #9453a6);
-  border: solid 1px;
-  margin-top: 10px;
-  height: 12vh;
-}
-footer .social {
-  display: flex;
-  justify-content: space-evenly;
-  width: 70%;
-  margin: auto;
-}
-footer .social div {
-  flex-grow: 1;
-  flex-basis: 33%;
-}
-footer .social .fa-brands,
-footer .social .fa {
-  color: #0d0d0d;
-  margin-top: 10px;
-  font-size: 175% !important;
-}
-footer .social .fa-brands:hover,
-footer .social .fa:hover {
-  font-weight: bold;
-  transition: 300ms;
-}
-footer .copyrightText {
-  font-size: 0.7rem;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
   .mainContainer {
     margin: auto;
   }
+
   .mainContainer .carusel {
     display: revert;
   }
+
   .mainContainer .carusel .crsl-imgText {
     padding: 0px;
     width: 50%;
   }
+
   .mainContainer .experiance {
     width: 80%;
   }
+
   .mainContainer .mobileImg {
     display: none;
   }
 }
+
 .myBtn {
   display: block;
   margin: auto;
@@ -319,7 +290,10 @@ footer .copyrightText {
   box-shadow: 2px 1px 15px rgba(0, 0, 0, 0.7);
   padding: 0 10px;
 }
+
 .myBtn:hover {
   color: #8cbf3f;
   font-weight: bold;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */

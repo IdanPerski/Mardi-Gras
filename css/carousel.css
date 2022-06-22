@@ -2,9 +2,10 @@
 
     position: relative;
     border: solid 2px;
-    height: 600px;
+    height: 550px;
     width: 100%;
     margin: 0 auto;
+    margin-top: 59px;
 
 }
 
@@ -25,7 +26,7 @@
 .crsl-imgText {
     position: relative;
     display: block;
-    top: 250px;
+    top: 260px;
     background-color: rgb(255, 255, 255, 0.4);
     font-family: 'externalFont1';
     width: 70%;
@@ -42,7 +43,7 @@
     position: relative;
     line-height: 1.5;
 
-    /* color: var(--color-3); */
+
 
 }
 
@@ -86,6 +87,7 @@
     object-fit: cover;
     object-position: center;
     opacity: 0.8;
+    /* margin-top: 59px; */
 
 }
 
@@ -211,5 +213,7 @@
         font-size: 1.05em;
 
     }
+
+
 
 }

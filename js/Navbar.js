@@ -27,7 +27,7 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
   
-    document.getElementById("logo").style.height = "9vh";
+    document.getElementById("logo").style.height = "7vh";
    
    logo.style.transform = "transition: transform 1s ease-in-out;"
     // logo.style.transform = " translate(25%)";
