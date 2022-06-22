@@ -26,8 +26,8 @@ header .divLogo {
 }
 header .divLogo .logo {
   display: block;
-  margin: auto;
-  height: 17vh;
+  margin: 8px auto;
+  height: 12vh;
 }
 
 .navList-m {
@@ -76,7 +76,7 @@ header .divLogo .logo {
   border: #0d0d0d solid 1px;
   background-color: #f2f2f2;
   padding: 2px;
-  margin-right: 4px;
+  margin-right: 20px;
   float: right;
   opacity: 0.8;
   cursor: pointer;
@@ -120,8 +120,8 @@ header .divLogo .logo {
     display: block;
     margin-left: 80px;
     position: relative;
-    transform: scale(1.7) translate(25%, 25%);
-    transition: transform 0.4s ease-in-out;
+    height: 15vh;
+    transition: 0.4s ease-in-out;
     z-index: 99;
   }
 

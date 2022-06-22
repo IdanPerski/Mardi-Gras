@@ -27,12 +27,17 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
   
-    document.getElementById("logo").style.height = "5.5vh";
-    document.getElementById("logo").style.transition = "transform 1s ease-in-out";
+    document.getElementById("logo").style.height = "9vh";
+   
+   logo.style.transform = "transition: transform 1s ease-in-out;"
+    // logo.style.transform = " translate(25%)";
   
   } else {
     
-    document.getElementById("logo").style.height = "8.8vh";
+  logo.style.height = "15vh";
+    
+     logo.style.transform = "transition: transform 3s ease-in-out;"
+    // logo.style.transform = " translate(25%)";
      navbar.classList.remove("sticky");
   }
 
