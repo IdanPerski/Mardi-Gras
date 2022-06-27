@@ -75,7 +75,7 @@ a:hover {
 }
 
 .experiance-Header {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-family: "externalFont2";
 
 
@@ -186,36 +186,7 @@ footer {
 }
 
 
-//////////faq///////////////
 
-.faqContainer {
-    background-image: url(../../img/unused/trnsp2.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-
-
-    .faq-text {
-        background-color: rgba(253, 248, 229, 0.75);
-        margin: auto;
-        word-spacing: 2px;
-        line-height: 1.5;
-        color: $black;
-        font-size: 1rem;
-        padding: 20px;
-        border: 1px solid $purple;
-    }
-
-    .faqHeader {
-        color: $yellow;
-        padding: 0;
-        width: 25%;
-        margin: 0 auto;
-        margin-bottom: 15px;
-        font-family: "externalFont2";
-
-    }
-}
 
 
 .accordion {
@@ -232,8 +203,62 @@ footer {
 
 }
 
-///////////////////////////////////////////////////
+////////////////contact///////////////////////////////////
+/* .PageHeader {
+    margin: auto;
+    margin-top: 15px;
+    font-size: 1rem;
+    font-family: 'externalFont2';
+    text-align: center;
+    width: 90%;
+    color: $yellow;
 
+}
+
+
+.my-form-bg {
+    background-image: linear-gradient(var(--color-4), var(--color-5), var(--color-4));
+    border: solid var(--color-5);
+    box-shadow: 2px 1px 15px rgba(0, 0, 0, 0.7);
+}
+
+.myClass-mail-link:link {
+    color: $green;
+
+}
+
+.myClass-mail-link:hover {
+    color: $purple;
+
+}
+
+
+.myModalBg {
+    background-image: url(../../img/unused/4.png);
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(161, 180, 75, 0.397);
+    object-fit: contain;
+    min-height: 300px;
+
+    .myHeader {
+        margin: 55px auto 8px auto;
+        color: $green;
+        text-shadow: 1px 0 0 $black, -2px 0 0 $black, 0 2px 0 $black, 0 -2px 0 $black, 1px 1px $black, -1px -1px 0 $black, 1px -1px 0 $black, -1px 1px 0 $black;
+        text-align: center;
+    }
+
+}
+
+.my-btn-close {
+    position: absolute;
+    right: 10px;
+    top: 10px
+}
+ */
+
+
+/////////////////////
 
 
 
@@ -266,12 +291,12 @@ footer {
 
     }
 
+    ///////////////////contact//////////////
 
-    /////////////////faq
-    .faqContainer {
-        margin-top: 60.2px;
+    .PageHeader {
+        margin-top: 100px;
+
     }
-
 
 
 

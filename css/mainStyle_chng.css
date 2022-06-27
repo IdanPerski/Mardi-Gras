@@ -123,7 +123,7 @@ a:hover {
 
 }
 
-.PageHeader {
+/* .PageHeader {
 
     margin: auto;
     padding: 4px;
@@ -133,14 +133,14 @@ a:hover {
     width: 90%;
     color: var(--color-5);
 
-}
+} */
 
-.myHeader {
+/* .myHeader {
     margin: 55px auto 8px auto;
     color: var(--color-4);
     text-shadow: 1px 0 0 var(--color-1), -2px 0 0 var(--color-1), 0 2px 0 var(--color-1), 0 -2px 0 var(--color-1), 1px 1px var(--color-1), -1px -1px 0 var(--color-1), 1px -1px 0 var(--color-1), -1px 1px 0 var(--color-1);
     text-align: center;
-}
+} */
 
 
 /*//////////// MOBILE MENU////////// */

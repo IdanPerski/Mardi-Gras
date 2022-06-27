@@ -6,6 +6,9 @@
     padding: 60px 30px;
     border: solid 1px;
     box-shadow: 2px 2px 15px rgb(0 0 0 / 80%);
+
+
+
 }
 
 .gallery-item img,
@@ -30,6 +33,8 @@ iframe {
 .mediaContainer {
     width: 80vw;
 }
+
+
 
 
 

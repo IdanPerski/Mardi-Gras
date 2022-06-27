@@ -1,0 +1,66 @@
+.PageHeader {
+    margin: auto;
+    margin-top: 15px;
+    font-size: 3rem;
+    font-family: 'externalFont2';
+    text-align: center;
+    width: 90%;
+    color: $yellow;
+
+
+}
+
+
+.my-form-bg {
+    background-image: linear-gradient($green, $purple, $green);
+    border: solid $purple;
+    box-shadow: 2px 1px 15px rgba(0, 0, 0, 0.7);
+}
+
+.myClass-mail-link:link {
+    color: $yellow;
+
+}
+
+.myClass-mail-link:hover {
+    color: $purple;
+
+}
+
+
+.myModalBg {
+    background-image: url(../../img/unused/4.png);
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(161, 180, 75, 0.397);
+    object-fit: contain;
+    min-height: 300px;
+
+    .myHeader {
+        margin: 55px auto 8px auto;
+        color: $green;
+        text-shadow: 1px 0 0 $black, -2px 0 0 $black, 0 2px 0 $black, 0 -2px 0 $black, 1px 1px $black, -1px -1px 0 $black, 1px -1px 0 $black, -1px 1px 0 $black;
+        text-align: center;
+    }
+
+}
+
+.my-btn-close {
+    position: absolute;
+    right: 10px;
+    top: 10px
+}
+
+@media only screen and (min-width: 768px) {
+    .PageHeader {
+        margin-top: 85px;
+
+
+    }
+
+    .my-modal-content {
+        width: 80vw;
+    }
+
+
+}

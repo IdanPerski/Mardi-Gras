@@ -1,0 +1,174 @@
+.hotelSection {
+    margin: auto;
+    width: 100%;
+    background-image: url(../img/transpMask.png);
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.img-container {
+    position: relative;
+    max-width: 300px;
+    max-height: 300px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #f2f2f2;
+
+
+}
+
+.card-img-top {
+    position: relative;
+    max-height: 180px;
+    display: block;
+    opacity: 1;
+    border: solid var(--color-1);
+    transition: opacity 0.5s linear;
+    background-color: #f2f2f2;
+
+
+}
+
+.imgList {
+    width: 100%;
+    margin: 0 auto -35px auto;
+    display: block;
+
+
+}
+
+.hidden {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    opacity: 0;
+    transition-delay: 0.5s;
+    transition: opacity 0.3s linear;
+    border: solid var(--color-5);
+    box-shadow: 2px 1px 8px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+
+}
+
+
+
+
+
+.aceHotel-img {
+    object-position: center;
+    object-fit: contain;
+    height: 63px;
+    margin: auto 5px;
+
+}
+
+.walOnImg {
+    position: absolute;
+    top: -50px;
+    max-height: 180px;
+
+}
+
+.card-deck {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+
+    .listed {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px;
+        align-items: center;
+
+        &.listed .imgList::before {
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            max-height: 100%;
+            transition: .4;
+
+
+        }
+    }
+
+}
+
+.card {
+
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    margin: auto;
+
+}
+
+.card-body {
+    text-align: center;
+    background-image: linear-gradient(var(--color-4), var(--color-3));
+    box-shadow: 2px 1px 15px rgba(0, 0, 0, 0.7);
+    border: var(--color-5) solid;
+    line-height: 30px;
+    text-align: center;
+}
+
+
+
+
+.text-intraduction {
+    margin: auto;
+    width: 80%;
+    line-height: 30px;
+    border: solid var(--color-5);
+    background-image: linear-gradient(var(--color-3), var(--color-4));
+    box-shadow: 2px 1px 15px rgb(0 0 0 / 70%);
+    border-radius: 25px;
+    padding: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+.card-text {
+
+    margin-top: 40px;
+}
+
+
+
+.rest-section {
+
+    background-image: url(../img/unused/1.png);
+    background-attachment: fixed;
+    background-position: center;
+
+
+}
+
+
+.attSec {
+    background-image: url(../img/unused/attBckg\ \(2\).png);
+    /* background-attachment:fixed; */
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat-y;
+
+}
+
+.att-header {
+    color: var(--color-3)
+}
+
+
+
+
+
+/* Tablet/desktop */
+@media only screen and (min-width: 768px) {}

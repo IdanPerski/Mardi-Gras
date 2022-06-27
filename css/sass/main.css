@@ -71,11 +71,11 @@ header .divLogo .logo {
 
 .burger {
   position: relative;
-  top: -28px;
+  top: -40px;
   border: #0d0d0d solid 1px;
   background-color: #f2f2f2;
-  padding: 2px;
-  margin-right: 20px;
+  padding: 4px;
+  margin-right: 30px;
   float: right;
   opacity: 0.8;
   cursor: pointer;
@@ -88,9 +88,10 @@ header .divLogo .logo {
 
 .line {
   background-color: #9453a6;
-  width: 20px;
-  height: 0.15em;
-  margin: 2px;
+  width: 30px;
+  height: 0.25em;
+  margin: 2.2px;
+  padding: 2px;
 }
 
 .clearFloat {
@@ -153,6 +154,284 @@ header .divLogo .logo {
     display: none;
   }
 }
+.myBtn {
+  display: block;
+  margin: auto;
+  background-color: #9453a6;
+  border: #0d0d0d solid 1px;
+  box-shadow: 2px 1px 15px rgba(0, 0, 0, 0.7);
+  padding: 0 10px;
+}
+.myBtn:hover {
+  color: #8cbf3f;
+  font-weight: bold;
+}
+
+.galleryHeader {
+  position: relative;
+  font-family: "externalFont2";
+  margin: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid: auto/repeat(auto-fit, minmax(15em, 1fr));
+  grid-gap: 1em;
+  background-image: linear-gradient(#f2cc0f, #8cbf3f, #9453a6);
+  padding: 60px 30px;
+  border: solid 1px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.8);
+}
+
+.gallery-item img,
+iframe {
+  max-height: 100%;
+  max-width: 100%;
+  padding: 2px;
+  border: solid 3px var(--color-5);
+  box-shadow: 2px 1px 15px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+#modalIMage {
+  width: 100%;
+}
+
+.mediaContainer {
+  width: 80vw;
+}
+
+@media only screen and (min-width: 768px) {
+  .galleryHeader {
+    font-family: "externalFont2";
+    margin-bottom: 25px;
+    margin-top: 80px;
+  }
+
+  .mediaContainer {
+    margin: 60px;
+  }
+}
+.faqContainer {
+  background-image: url(../../img/unused/trnsp2.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100vw;
+  margin: 0 auto;
+}
+.faqContainer .faq-text {
+  background-color: rgba(253, 248, 229, 0.75);
+  margin: auto;
+  word-spacing: 2px;
+  line-height: 1.5;
+  color: #0d0d0d;
+  font-size: 1rem;
+  padding: 20px;
+  border: 1px solid #9453a6;
+}
+.faqContainer .faqHeader {
+  color: #f2cc0f;
+  padding: 0;
+  width: 25%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  font-family: "externalFont2";
+}
+
+@media only screen and (min-width: 768px) {
+  .faqContainer {
+    margin-top: 60.2px;
+    width: 100vw;
+  }
+}
+.PageHeader {
+  margin: auto;
+  margin-top: 15px;
+  font-size: 3rem;
+  font-family: "externalFont2";
+  text-align: center;
+  width: 90%;
+  color: #f2cc0f;
+}
+
+.my-form-bg {
+  background-image: linear-gradient(#8cbf3f, #9453a6, #8cbf3f);
+  border: solid #9453a6;
+  box-shadow: 2px 1px 15px rgba(0, 0, 0, 0.7);
+}
+
+.myClass-mail-link:link {
+  color: #f2cc0f;
+}
+
+.myClass-mail-link:hover {
+  color: #9453a6;
+}
+
+.myModalBg {
+  background-image: url(../../img/unused/4.png);
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(161, 180, 75, 0.397);
+  -o-object-fit: contain;
+     object-fit: contain;
+  min-height: 300px;
+}
+.myModalBg .myHeader {
+  margin: 55px auto 8px auto;
+  color: #8cbf3f;
+  text-shadow: 1px 0 0 #0d0d0d, -2px 0 0 #0d0d0d, 0 2px 0 #0d0d0d, 0 -2px 0 #0d0d0d, 1px 1px #0d0d0d, -1px -1px 0 #0d0d0d, 1px -1px 0 #0d0d0d, -1px 1px 0 #0d0d0d;
+  text-align: center;
+}
+
+.my-btn-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .PageHeader {
+    margin-top: 85px;
+  }
+
+  .my-modal-content {
+    width: 80vw;
+  }
+}
+.hotelSection {
+  margin: auto;
+  width: 100%;
+  background-image: url(../img/transpMask.png);
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.img-container {
+  position: relative;
+  max-width: 300px;
+  max-height: 300px;
+  margin: auto;
+  margin-top: 20px;
+  background-color: #f2f2f2;
+}
+
+.card-img-top {
+  position: relative;
+  max-height: 180px;
+  display: block;
+  opacity: 1;
+  border: solid var(--color-1);
+  transition: opacity 0.5s linear;
+  background-color: #f2f2f2;
+}
+
+.imgList {
+  width: 100%;
+  margin: 0 auto -35px auto;
+  display: block;
+}
+
+.hidden {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0;
+  transition-delay: 0.5s;
+  transition: opacity 0.3s linear;
+  border: solid var(--color-5);
+  box-shadow: 2px 1px 8px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+.aceHotel-img {
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 63px;
+  margin: auto 5px;
+}
+
+.walOnImg {
+  position: absolute;
+  top: -50px;
+  max-height: 180px;
+}
+
+.card-deck {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.card-deck .listed {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  align-items: center;
+}
+.card-deck .listed.listed .imgList::before {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  max-height: 100%;
+  transition: 0.4;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  margin: auto;
+}
+
+.card-body {
+  text-align: center;
+  background-image: linear-gradient(var(--color-4), var(--color-3));
+  box-shadow: 2px 1px 15px rgba(0, 0, 0, 0.7);
+  border: var(--color-5) solid;
+  line-height: 30px;
+  text-align: center;
+}
+
+.text-intraduction {
+  margin: auto;
+  width: 80%;
+  line-height: 30px;
+  border: solid var(--color-5);
+  background-image: linear-gradient(var(--color-3), var(--color-4));
+  box-shadow: 2px 1px 15px rgba(0, 0, 0, 0.7);
+  border-radius: 25px;
+  padding: 15px;
+}
+
+.card-text {
+  margin-top: 40px;
+}
+
+.rest-section {
+  background-image: url(../img/unused/1.png);
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.attSec {
+  background-image: url(../img/unused/attBckg\ \(2\).png);
+  /* background-attachment:fixed; */
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-y;
+}
+
+.att-header {
+  color: var(--color-3);
+}
+
+/* Tablet/desktop */
 body {
   background-color: #FDF8E5;
   overflow-x: hidden;
@@ -216,7 +495,7 @@ a:hover {
 }
 
 .experiance-Header {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-family: "externalFont2";
 }
 
@@ -304,31 +583,6 @@ footer .copyrightText {
   text-align: center;
 }
 
-.faqContainer {
-  background-image: url(../../img/unused/trnsp2.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.faqContainer .faq-text {
-  background-color: rgba(253, 248, 229, 0.75);
-  margin: auto;
-  word-spacing: 2px;
-  line-height: 1.5;
-  color: #0d0d0d;
-  font-size: 1rem;
-  padding: 20px;
-  border: 1px solid #9453a6;
-}
-.faqContainer .faqHeader {
-  color: #f2cc0f;
-  padding: 0;
-  width: 25%;
-  margin: 0 auto;
-  margin-bottom: 15px;
-  font-family: "externalFont2";
-}
-
 .accordion {
   margin: 40px;
   opacity: 0.9;
@@ -340,6 +594,58 @@ footer .copyrightText {
   margin: auto;
 }
 
+/* .PageHeader {
+    margin: auto;
+    margin-top: 15px;
+    font-size: 1rem;
+    font-family: 'externalFont2';
+    text-align: center;
+    width: 90%;
+    color: $yellow;
+
+}
+
+
+.my-form-bg {
+    background-image: linear-gradient(var(--color-4), var(--color-5), var(--color-4));
+    border: solid var(--color-5);
+    box-shadow: 2px 1px 15px rgba(0, 0, 0, 0.7);
+}
+
+.myClass-mail-link:link {
+    color: $green;
+
+}
+
+.myClass-mail-link:hover {
+    color: $purple;
+
+}
+
+
+.myModalBg {
+    background-image: url(../../img/unused/4.png);
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(161, 180, 75, 0.397);
+    object-fit: contain;
+    min-height: 300px;
+
+    .myHeader {
+        margin: 55px auto 8px auto;
+        color: $green;
+        text-shadow: 1px 0 0 $black, -2px 0 0 $black, 0 2px 0 $black, 0 -2px 0 $black, 1px 1px $black, -1px -1px 0 $black, 1px -1px 0 $black, -1px 1px 0 $black;
+        text-align: center;
+    }
+
+}
+
+.my-btn-close {
+    position: absolute;
+    right: 10px;
+    top: 10px
+}
+ */
 @media only screen and (min-width: 768px) {
   .mainContainer {
     margin: auto;
@@ -362,65 +668,7 @@ footer .copyrightText {
     margin: auto;
   }
 
-  .faqContainer {
-    margin-top: 60.2px;
-  }
-}
-.myBtn {
-  display: block;
-  margin: auto;
-  background-color: #9453a6;
-  border: #0d0d0d solid 1px;
-  box-shadow: 2px 1px 15px rgba(0, 0, 0, 0.7);
-  padding: 0 10px;
-}
-.myBtn:hover {
-  color: #8cbf3f;
-  font-weight: bold;
-}
-
-.galleryHeader {
-  position: relative;
-  font-family: "externalFont2";
-  margin: 20px;
-}
-
-.gallery {
-  display: grid;
-  grid: auto/repeat(auto-fit, minmax(15em, 1fr));
-  grid-gap: 1em;
-  background-image: linear-gradient(#f2cc0f, #8cbf3f, #9453a6);
-  padding: 60px 30px;
-  border: solid 1px;
-  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.8);
-}
-
-.gallery-item img,
-iframe {
-  max-height: 100%;
-  max-width: 100%;
-  padding: 2px;
-  border: solid 3px var(--color-5);
-  box-shadow: 2px 1px 15px rgba(0, 0, 0, 0.7);
-  cursor: pointer;
-}
-
-#modalIMage {
-  width: 100%;
-}
-
-.mediaContainer {
-  width: 80vw;
-}
-
-@media only screen and (min-width: 768px) {
-  .galleryHeader {
-    font-family: "externalFont2";
-    margin-bottom: 25px;
-    margin-top: 80px;
-  }
-
-  .mediaContainer {
-    margin: 60px;
+  .PageHeader {
+    margin-top: 100px;
   }
 }/*# sourceMappingURL=main.css.map */

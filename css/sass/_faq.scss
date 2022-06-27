@@ -1,0 +1,39 @@
+.faqContainer {
+    background-image: url(../../img/unused/trnsp2.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100vw;
+    margin: 0 auto;
+
+
+    .faq-text {
+        background-color: rgba(253, 248, 229, 0.75);
+        margin: auto;
+        word-spacing: 2px;
+        line-height: 1.5;
+        color: $black;
+        font-size: 1rem;
+        padding: 20px;
+        border: 1px solid $purple;
+
+    }
+
+    .faqHeader {
+        color: $yellow;
+        padding: 0;
+        width: 25%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        font-family: "externalFont2";
+
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .faqContainer {
+        margin-top: 60.2px;
+        width: 100vw;
+    }
+}

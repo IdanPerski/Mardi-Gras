@@ -52,7 +52,7 @@ body {
 
 
 
-header {
+/* header {
 
     border: solid 1px;
     font-family: 'externalFont1';
@@ -60,13 +60,12 @@ header {
     background-image: url(../img/hdrbckgrn.png);
     background-attachment: fixed;
     background-position: center;
-    /* background-repeat: repeat-x; */
     background-size: cover;
     border: solid;
 
-}
+} */
 
-.logo {
+/* .logo {
     display: block;
     margin: auto;
     height: 120px;
@@ -78,7 +77,7 @@ header {
 .divLogo {
     margin: auto;
     width: 25%;
-}
+} */
 
 .textHeader {
     text-shadow: 1px 0 0 var(--color-1),
