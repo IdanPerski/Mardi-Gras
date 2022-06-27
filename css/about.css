@@ -1,74 +1,62 @@
-.aboutContainer{
-
-   background-color:rgba(253, 248, 205, 0.5);
-   width: 100%;
-   
-}
-
-
-
-.aboutSection{
-    margin: auto;
-    word-spacing: 2px;
-    line-height: 25px;
+.aboutContainer {
+    background-color: rgba(253, 248, 205, 0.5);
+    width: 100%;
     background-image: url(../img/transpMask.png);
     background-attachment: fixed;
     background-position: center;
+
+}
+
+
+
+.aboutSection {
+    margin: auto;
+    word-spacing: 2px;
+    line-height: 25px;
+
     color: var(--color-1);
     border: solid var(--color-3);
-  
 
-font-size: 18px;
-padding: 40px;
-width: 90%;
-   
+
+    font-size: 18px;
+    padding: 40px;
+    width: 90%;
+
 }
 
-.aboutText{
-   background-color: rgba(253, 248, 229, 0.75); 
-  
-   
+.aboutText {
+    background-color: rgba(253, 248, 229, 0.75);
+
+
 }
 
-.aboutHeader{
+.aboutHeader {
     text-align: center;
     font-size: 20px;
     margin: 10px auto;
     color: #85d50f;
     font-family: externalFont2;
-   
-   
 
-   
 }
-  /* --color-1: #0d0d0d;
-    --color-2: #f2f2f2;
-    --color-3: #f2cc0f;
-    --color-4: #8cbf3f;
-    --color-5: #9453a6; */
 
-.mayorText{
-    margin: 50px;
+
+.mayorText {
     padding: 40px;
-    /* float: left; */
-    margin: 50px auto;
-   
-   
-    /* text-align: justify; */
-    
+    margin: 0 auto;
+
 }
 
-.mayorText>p{
-     background-color: rgba(253, 248, 229, 0.75); 
-    
-     
+.mayorText>p {
+    background-color: rgba(253, 248, 229, 0.75);
+
+
 }
 
-.mayorDiv{
-    width:100%;
+.mayorDiv {
+    width: 100vw;
     margin: auto;
-    
-    
+
+
 }
 
 
@@ -77,85 +65,92 @@ width: 90%;
 
 .mayorImg {
     display: block;
-    /* max-height: 150px; */
-    max-height: 300px;
+    max-height: 200px;
+    /* max-height: 300px; */
     max-width: 100%;
-    margin: 5px auto  ;
-     /* background-color:rgba(242, 242, 242, 0.616); */
-        background-attachment: fixed;
+    margin: 5px auto;
+    /* background-color:rgba(242, 242, 242, 0.616); */
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     /* float: left; */
- 
+
 
 }
 
-.mayorImg2>img{
+.mayorImg2>img {
 
     width: 100%;
-   height: auto;
+    height: auto;
     margin: auto;
-  
-      
-       padding: 0;
-       
-       overflow: hidden;
-       
+
+
+    padding: 0;
+
+    overflow: hidden;
+
 
 }
 
 
 
-.clear-float{
+.clear-float {
     clear: both;
 }
 
 /* Tablet/desktop */
 @media only screen and (min-width: 768px) {
+    .aboutContainer {
+        margin-top: 60px;
+    }
 
-.mayorImg {
-    display: block;
-    max-width:100%;;
-    float: left;
+    .mayorImg {
+        display: block;
+        max-width: 100%;
+        ;
+        float: left;
+    }
+
+    .mayorImg2 {
+
+        background-image: url(../img/unused/latoya_cantrell.jpg);
+        height: 400px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    img {
+        display: none;
+    }
+
+
+
+
+
 }
 
-.mayorImg2{
-    
-     background-image: url(../img/unused/latoya_cantrell.jpg);
-    height: 400px;
-     width: 100%;
-     background-repeat: no-repeat;
-      background-position: center;
-}
-
-img{display: none;}
-
-
-
-
-    
-}
 /* desktop */
 @media only screen and (min-width: 1024) {
 
-.mayorImg {
-  height: auto;
-   width: 20px;
-}
+    .mayorImg {
+        height: auto;
+        width: 20px;
+    }
 
 
-.mayorImg2>img{
-    display: none;
-  
-}
+    .mayorImg2>img {
+        display: none;
 
-
-
+    }
 
 
 
 
 
 
-    
+
+
+
+
 }

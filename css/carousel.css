@@ -56,18 +56,18 @@
 
 } */
 
-.ticketsLink {
+/* .ticketsLink {
     text-decoration: none;
     color: var(--color-2);
     font-size: 20px;
 
 
 
-}
+} */
 
-.ticketsLink:hover {
+/* .ticketsLink:hover {
     color: var(--color-4);
-}
+} */
 
 .caruselImg-r_pos {
     position: absolute;
@@ -205,14 +205,14 @@
 @media only screen and (max-width: 768px) {
 
     .crsl-imgText>h1 {
-        font-size: 3vh;
+        font-size: 1.3rem;
 
     }
 
-    .ticketsLink {
-        font-size: 1.05em;
+    /* .ticketsLink {
+        font-size: 0.8rem;
 
-    }
+    } */
 
 
 

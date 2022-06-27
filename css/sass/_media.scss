@@ -1,12 +1,19 @@
+.galleryHeader {
+    position: relative;
+    font-family: 'externalFont2';
+    margin: 20px;
+}
+
 .gallery {
     display: grid;
     grid: auto / repeat(auto-fit, minmax(15em, 1fr));
     grid-gap: 1em;
-    /* background-image: linear-gradient(var(--color-3), var(--color-4), var(--color-3)); */
+    background-image: linear-gradient($yellow, $green, $purple);
     padding: 60px 30px;
     border: solid 1px;
     box-shadow: 2px 2px 15px rgb(0 0 0 / 80%);
 }
+
 
 .gallery-item img,
 iframe {
@@ -31,23 +38,15 @@ iframe {
     width: 80vw;
 }
 
-
-
 @media only screen and (min-width: 768px) {
-
+    .galleryHeader {
+        font-family: 'externalFont2';
+        margin-bottom: 25px;
+        margin-top: 80px;
+    }
 
     .mediaContainer {
         margin: 60px;
-        ;
+
     }
-
-
-
-
-
-
-
 }
-
-
-@media only screen and (min-width: 1200px) {}
