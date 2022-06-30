@@ -22,7 +22,7 @@
     max-height: 180px;
     display: block;
     opacity: 1;
-    border: solid var(--color-1);
+    border: solid $black;
     transition: opacity 0.5s linear;
     background-color: #f2f2f2;
 
@@ -47,7 +47,7 @@
     opacity: 0;
     transition-delay: 0.5s;
     transition: opacity 0.3s linear;
-    border: solid var(--color-5);
+    border: solid $purple;
     box-shadow: 2px 1px 8px rgba(0, 0, 0, 0.7);
     cursor: pointer;
 
@@ -106,9 +106,9 @@
 
 .card-body {
     text-align: center;
-    background-image: linear-gradient(var(--color-4), var(--color-3));
+    background-image: linear-gradient($green, $yellow);
     box-shadow: 2px 1px 15px rgba(0, 0, 0, 0.7);
-    border: var(--color-5) solid;
+    border: $purple solid;
     line-height: 30px;
     text-align: center;
 }
@@ -120,8 +120,8 @@
     margin: auto;
     width: 80%;
     line-height: 30px;
-    border: solid var(--color-5);
-    background-image: linear-gradient(var(--color-3), var(--color-4));
+    border: solid $purple;
+    background-image: linear-gradient($green, $yellow);
     box-shadow: 2px 1px 15px rgb(0 0 0 / 70%);
     border-radius: 25px;
     padding: 15px;

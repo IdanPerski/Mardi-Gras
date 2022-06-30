@@ -76,7 +76,7 @@
      border: $black solid 1px;
      background-color: $white;
      padding: 4px;
-     margin-right: 30px;
+     margin-right: 10px;
      float: right;
      opacity: 0.8;
      cursor: pointer;
@@ -128,9 +128,10 @@
              .logo {
                  display: block;
                  margin-left: 80px;
+                 margin-top: 5px;
                  position: relative;
-                 height: 15vh;
-                 transform: scale(1.2) translate(-7%);
+                 //  height: 10vh;
+                 //  transform: scale(1.2) translate(-7%);
                  transition: 0.4s ease-in-out;
                  z-index: 99;
 
