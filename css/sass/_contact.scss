@@ -14,7 +14,9 @@
 .my-form-bg {
     background-image: linear-gradient($green, $purple, $green);
     border: solid $purple;
-    box-shadow: 2px 1px 15px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30),
+        0 15px 12px rgba(0, 0, 0, 0.22);
+    margin-bottom: 250px;
 }
 
 .myClass-mail-link:link {

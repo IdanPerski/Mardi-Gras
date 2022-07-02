@@ -1,10 +1,24 @@
 .hotelSection {
     margin: auto;
     width: 100%;
-    background-image: url(../img/transpMask.png);
-    background-attachment: fixed;
+    background-image: url(../../img/transpMask.png);
+    // background-attachment: fixed;
     background-position: center;
+    background-size: contain;
+
+
+
+
 }
+
+.hotelsHeader {
+    margin: 0 auto;
+    background-color: rgba(253, 248, 229, .4);
+    width: 20%;
+
+}
+
+
 
 .img-container {
     position: relative;
@@ -77,22 +91,7 @@
     flex-direction: column;
     padding: 5px;
 
-    .listed {
-        display: flex;
-        justify-content: space-between;
-        margin: 30px;
-        align-items: center;
 
-        &.listed .imgList::before {
-            position: absolute;
-            z-index: 1;
-            width: 100%;
-            max-height: 100%;
-            transition: .4;
-
-
-        }
-    }
 
 }
 
@@ -100,7 +99,7 @@
 
     background-color: rgba(255, 255, 255, 0);
     border: none;
-    margin: auto;
+    margin: 40px auto;
 
 }
 
@@ -111,6 +110,7 @@
     border: $purple solid;
     line-height: 30px;
     text-align: center;
+    border-radius: 25px;
 }
 
 
@@ -154,16 +154,38 @@
 
 
 .attSec {
-    background-image: url(../img/unused/attBckg\ \(2\).png);
+    background-image: url(../../img/unused/attBckg\ \(2\).png);
     /* background-attachment:fixed; */
     background-size: contain;
     background-position: center;
     background-repeat: repeat-y;
+    padding-bottom: 40px;
+
+    .listed {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px;
+        align-items: center;
+
+        &.listed .imgList::before {
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            max-height: 100%;
+            transition: .4;
+
+
+        }
+    }
 
 }
 
 .att-header {
-    color: var(--color-3)
+    color: $yellow;
+    margin-top: 60px;
+    margin: 0 auto;
+    background-color: rgba(253, 248, 229, .4);
+    width: 40%;
 }
 
 
@@ -171,4 +193,38 @@
 
 
 /* Tablet/desktop */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+
+
+    .hotelSection {
+
+        margin-top: 60px;
+
+        .hotelsHeader {
+            margin: 0 auto;
+
+        }
+    }
+
+
+    .attSec {
+        margin-top: 60px;
+
+        .att-header {
+            width: 25%;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+
+    .text-intraduction {
+        width: 70vw;
+    }
+
+    .card-body {
+        width: 70vw;
+        margin: 0 auto;
+    }
+}

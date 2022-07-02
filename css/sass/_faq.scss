@@ -9,13 +9,15 @@
 
     .faq-text {
         background-color: rgba(253, 248, 229, 0.75);
-        margin: auto;
+        margin: 105px auto;
         word-spacing: 2px;
         line-height: 1.5;
         color: $black;
         font-size: 1rem;
         padding: 20px;
-        border: 1px solid $purple;
+        border: 2px solid $purple;
+        width: 80%;
+        border-radius: 25px;
 
     }
 
@@ -26,6 +28,22 @@
         margin: 0 auto;
         margin-bottom: 15px;
         font-family: "externalFont2";
+
+    }
+
+    .accordion {
+        margin: 40px;
+        opacity: 0.9;
+        background-color: #666;
+        margin-top: 100px;
+        margin-bottom: 150px;
+        // background-image: url(../../img/unused/trnsp2.png);
+
+        .accordion-item {
+            border: 1px solid $purple;
+            background-color: rgba(255, 255, 255, 0.9);
+            margin: auto
+        }
 
     }
 }
