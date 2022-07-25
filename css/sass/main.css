@@ -32,7 +32,9 @@ a:hover {
 }
 .mainContainer .mobileImg {
   position: relative;
-  height: hvh;
+  height: 65vh;
+  width: 100%;
+  margin-left: -10px;
   /* mobile only */
 }
 
@@ -192,6 +194,11 @@ footer .copyrightText {
   }
   .PageHeader {
     margin-top: 100px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .carusel {
+    height: 70vh;
   }
 }
 header {
@@ -482,7 +489,12 @@ header .divLogo .logo {
 /* Tablet/desktop */
 @media only screen and (min-width: 768px) {
   .crsl-imgText > h1 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .carusel {
+    height: 65vh;
   }
 }
 .myBtn {

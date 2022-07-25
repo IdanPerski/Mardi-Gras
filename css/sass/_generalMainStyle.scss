@@ -25,7 +25,10 @@ a:hover {
 
     .mobileImg {
         position: relative;
-        height: hvh;
+        height: 65vh;
+        width: 100%;
+        margin-left: -10px;
+
         /* mobile only */
     }
 
@@ -246,4 +249,8 @@ footer {
 }
 
 
-@media only screen and (min-width:992px) {}
+@media only screen and (min-width:992px) {
+    .carusel {
+        height: 70vh;
+    }
+}
