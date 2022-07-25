@@ -5,7 +5,6 @@
  let qustCounter = 0
  let questionDiv = document.getElementById("rowQuiz");
  const progresScore = document.getElementById('scoreBoard');
- 
  const startBtn = document.getElementById('startBtn');
    
 const questions = [
@@ -115,9 +114,7 @@ const questions = [
 console.log(theScore)
   
     let triviaPage = document.getElementById('triviaDiv');
-
        if(qustCounter === 10  ){
-     
            triviaPage.style.display="none";
         
        }
@@ -164,11 +161,9 @@ else{
 
 
 
-function getValue(element){
-  
+function getValue(element){ 
   score+= +element.value;
   qustCounter++;
- 
     addQuestion()
      socreBoard()
    
@@ -178,10 +173,7 @@ function getValue(element){
  let  theScore = score*10;
     progresScore.ariaValueNow = theScore;
     progresScore.style.width = +theScore+"%";
-   
-    progresScore.innerText= +theScore
-    
-     
+    progresScore.innerText= +theScore   
     
  }
 
@@ -190,10 +182,7 @@ function getValue(element){
 
 
 let  triviaWinner= {}
-
  let winnerArr = []
-
- 
 function input(key,keyValue){
 
     triviaWinner[key]=keyValue;
@@ -202,31 +191,26 @@ function input(key,keyValue){
 }
 
  
-function save() {
-    
+function save() {   
   winnerArr.push(triviaWinner)
-
   triviaWinner = {}
-
 //   formSent();
  console.log(winnerArr)
   
 }
+
  function validateTriviaForm() {
      let inputs = Array.from(document.getElementsByTagName('input'));
-   
      let errorMsg = document.getElementById('TriviaErrorMsg');
-
 
  if(inputs[0].value ===  '' || inputs[1].value ===  '' ||inputs[2].value === ''  ) {
     errorMsg.innerText = '*Missing details, please fill up the form'   
  }
 
-
- 
  else{
      save()
        errorMsg.innerText= ''
+       document.location= "../index.html"
     
  }
 

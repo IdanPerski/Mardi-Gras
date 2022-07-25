@@ -32,7 +32,7 @@ a:hover {
 }
 .mainContainer .mobileImg {
   position: relative;
-  height: 50vh;
+  height: hvh;
   /* mobile only */
 }
 
@@ -190,7 +190,6 @@ footer .copyrightText {
   .mainContainer footer .copyrightText {
     margin-top: 30px;
   }
-
   .PageHeader {
     margin-top: 100px;
   }
@@ -285,7 +284,6 @@ header .divLogo .logo {
   .burger {
     display: none !important;
   }
-
   header {
     position: fixed;
     top: 0;
@@ -306,16 +304,13 @@ header .divLogo .logo {
     transition: 0.4s ease-in-out;
     z-index: 99;
   }
-
   .navList-m {
     display: none;
     transform: none;
   }
-
   .navActive {
     transform: none;
   }
-
   .navList-t {
     display: flex;
     background-image: none;
@@ -331,7 +326,6 @@ header .divLogo .logo {
     border: none;
     list-style: none;
   }
-
   .menuImg {
     display: none;
   }
@@ -361,23 +355,25 @@ header .divLogo .logo {
 .crsl-imgText {
   position: relative;
   display: block;
-  top: 260px;
+  top: 230px;
   background-color: rgba(255, 255, 255, 0.4);
   font-family: "externalFont1";
   width: 70%;
   margin: auto;
   text-align: center;
+  letter-spacing: 4px;
 }
 
 .caruselSlide5-text {
   font-size: 1.6rem;
   position: relative;
   line-height: 1.5;
+  letter-spacing: 4px;
 }
 
 .mTwin {
-  font-size: 1.2rem;
-  color: var(--color-5);
+  font-size: 1.2rem !important;
+  color: #9453a6 !important;
 }
 
 .caruselImg-r_pos {
@@ -486,13 +482,7 @@ header .divLogo .logo {
 /* Tablet/desktop */
 @media only screen and (min-width: 768px) {
   .crsl-imgText > h1 {
-    font-size: 1.3rem;
-  }
-}
-@media only screen and (min-width: 1400px) {
-  .carusel {
-    margin-top: 100px;
-    width: 85%;
+    font-size: 2.5rem;
   }
 }
 .myBtn {
@@ -548,7 +538,6 @@ iframe {
     margin-bottom: 25px;
     margin-top: 80px;
   }
-
   .mediaContainer {
     margin: 60px;
   }
@@ -651,7 +640,6 @@ iframe {
   .PageHeader {
     margin-top: 85px;
   }
-
   .my-modal-content {
     width: 80vw;
   }
@@ -807,7 +795,6 @@ iframe {
   .hotelSection .hotelsHeader {
     margin: 0 auto;
   }
-
   .attSec {
     margin-top: 60px;
   }
@@ -819,7 +806,6 @@ iframe {
   .text-intraduction {
     width: 70vw;
   }
-
   .card-body {
     width: 70vw;
     margin: 0 auto;

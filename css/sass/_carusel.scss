@@ -26,12 +26,13 @@
 .crsl-imgText {
     position: relative;
     display: block;
-    top: 260px;
+    top: 230px;
     background-color: rgb(255, 255, 255, 0.4);
     font-family: 'externalFont1';
     width: 70%;
     margin: auto;
     text-align: center;
+    letter-spacing: 4px;
 
 }
 
@@ -42,14 +43,14 @@
     font-size: 1.6rem;
     position: relative;
     line-height: 1.5;
-
+    letter-spacing: 4px;
 
 
 }
 
 .mTwin {
-    font-size: 1.2rem;
-    color: var(--color-5);
+    font-size: 1.2rem !important;
+    color: $purple !important;
 }
 
 
@@ -183,7 +184,7 @@
 @media only screen and (min-width: 768px) {
 
     .crsl-imgText>h1 {
-        font-size: 1.3rem;
+        font-size: 2.5rem;
 
     }
 
@@ -195,9 +196,9 @@
 
 
 
-@media only screen and (min-width: 1400px) {
-    .carusel {
-        margin-top: 100px;
-        width: 85%;
-    }
-}
+// @media only screen and (min-width: 1400px) {
+//     .carusel {
+//         margin-top: 100px;
+//         width: 85%;
+//     }
+// }
