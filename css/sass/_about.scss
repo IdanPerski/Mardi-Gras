@@ -1,0 +1,106 @@
+.aboutContainer {
+    background-color: rgba(253, 248, 205, 0.5);
+    width: 100%;
+    background-image: url(../img/transpMask.png);
+    background-attachment: fixed;
+    background-position: center;
+
+
+    .aboutSection {
+        margin: auto;
+        word-spacing: 2px;
+        color: $black;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        padding: 40px;
+        width: 90%;
+
+        .aboutText {
+            background-color: rgba(253, 248, 229, 0.75);
+
+
+        }
+
+        .aboutHeader {
+            text-align: center;
+            font-size: 2rem;
+            margin: 10px auto;
+            color: #85d50f;
+            font-family: externalFont2;
+
+        }
+
+        .mayorImg2 {
+            img {
+                width: 100%;
+                height: auto;
+                margin: auto;
+                padding: 0;
+                overflow: hidden;
+            }
+        }
+
+        .mayorImg {
+            display: block;
+            max-height: 200px;
+            max-width: 100%;
+            margin: 5px auto;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+    }
+
+
+}
+
+
+.mayorDiv {
+    width: 100vw;
+    margin: auto;
+
+    .mayorText {
+        padding: 40px;
+        padding-top: 0px;
+        margin: 0 auto;
+
+        p {
+            background-color: rgba(253, 248, 229, 0.75);
+        }
+
+    }
+
+
+
+
+}
+
+
+/* Tablet/desktop */
+@media only screen and (min-width: 768px) {
+    .aboutContainer {
+        margin-top: 60px;
+
+        .mayorImg {
+            display: block;
+            max-width: 100%;
+            ;
+            float: left;
+        }
+
+        .mayorImg2 {
+
+            background-image: url(../../img/unused/latoya_cantrell.jpg);
+            height: 400px;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+
+        img {
+            display: none;
+        }
+    }
+}
