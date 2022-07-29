@@ -3,11 +3,8 @@
 'use strict'
 
 let user= {}
-
 let clientsArr = []
-
 let index = 0;
-
 let formFilled = document.getElementById('formFilled');
 
 function input(key,keyValue){
@@ -18,12 +15,9 @@ function input(key,keyValue){
 }
 
  
-function save() {
-    
+function save() { 
   clientsArr.push(user)
-
   user = {}
-
   formSent();
  console.log(clientsArr)
   
@@ -32,7 +26,7 @@ function save() {
 
 
 function formSent () {
-   let formModal =   document.getElementById('formModal')
+ let formModal =   document.getElementById('formModal')
  let myModal = new bootstrap.Modal(formModal)
  myModal.show();}
 
