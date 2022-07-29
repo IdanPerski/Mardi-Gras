@@ -49,8 +49,11 @@ inputs[2] = email;
 function validateForm() {
  
 
- if(firstName.value ===  '' || lastName.value ===  '' ||email.value === '' || textArea.value === ''  ) {
+ if(firstName.value ===  '' || lastName.value ===  '' ||textArea.value === '' )  {
     errorMsg.innerText = '*missing details, please fill up the form'   
+ }else if(email.value === '' ||email.value.indexOf('@') == -1 ){
+  errorMsg.innerText = '*Email address invalid';
+  email.focus();
  }
  
  else{
@@ -62,51 +65,4 @@ function validateForm() {
 }
 
 
-///////////// VALIDATION ///////////////////
-
-
-//TODO: email regex
-
-// let emailRegex = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/; 
-
-
-// console.log(emailRegex)
-
-
-// function emailValidation (){
-//    if(email.value === emailRegex) {
-
-//  EmailErrorMsg.innerText = '*email adress must contain @ character'   
-//  }
-// }
-
-
-
-
-
-
-///////////code by zeev///////////
-/////////////////// user DIDN'T WORK////////////////
-
-// const validations = {
-//   email: function(value) {
-//     return value.indexOf('@') > -1;
-//   }
-// }
-
-
-// function input(key,keyValue){
-
-//     user[key]=keyValue;
-
-//     // if (validations[key]) {
-//       if (!validations[key](keyValue)) {
-//         alert(`Invalid value for ${key}`);
-//       }
-      
-//     // }
-
-//     return user
-   
-// }
 
