@@ -497,6 +497,25 @@ header .divLogo .logo {
     height: 65vh;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .carusel {
+    height: 75vh;
+  }
+  .caruselImg-center-pos {
+    height: 130%;
+  }
+  .crsl-imgText {
+    top: 365px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .carusel {
+    height: 75vh;
+  }
+  .caruselImg-center-pos {
+    height: 140%;
+  }
+}
 .myBtn {
   display: block;
   margin: auto;
@@ -513,7 +532,7 @@ header .divLogo .logo {
 .aboutContainer {
   background-color: rgba(253, 248, 205, 0.5);
   width: 100%;
-  background-image: url(../img/transpMask.png);
+  background-image: url(../../img/transpMask.png);
   background-attachment: fixed;
   background-position: center;
 }
@@ -527,7 +546,7 @@ header .divLogo .logo {
   width: 90%;
 }
 .aboutContainer .aboutSection .aboutText {
-  background-color: rgba(253, 248, 229, 0.75);
+  background-color: rgba(253, 248, 229, 0.85);
 }
 .aboutContainer .aboutSection .aboutHeader {
   text-align: center;

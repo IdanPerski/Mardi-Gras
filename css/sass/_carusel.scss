@@ -199,4 +199,36 @@
     .carusel {
         height: 65vh;
     }
+
+
+
+}
+
+@media only screen and (min-width:1200px) {
+
+    .carusel {
+        height: 75vh;
+    }
+
+    .caruselImg-center-pos {
+        height: 130%;
+
+
+    }
+
+    .crsl-imgText {
+
+        top: 365px;
+    }
+}
+
+@media only screen and (min-width:1400px) {
+    .carusel {
+        height: 75vh;
+
+    }
+
+    .caruselImg-center-pos {
+        height: 140%;
+    }
 }
