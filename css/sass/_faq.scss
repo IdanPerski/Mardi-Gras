@@ -13,7 +13,7 @@
         word-spacing: 2px;
         line-height: 1.5;
         color: $black;
-        font-size: 1rem;
+        font-size: 1.2rem;
         padding: 20px;
         border: 2px solid $purple;
         width: 80%;
@@ -37,12 +37,22 @@
         background-color: #666;
         margin-top: 100px;
         margin-bottom: 150px;
-        // background-image: url(../../img/unused/trnsp2.png);
+        font-size: 1.2rem;
+
 
         .accordion-item {
             border: 1px solid $purple;
             background-color: rgba(255, 255, 255, 0.9);
-            margin: auto
+            margin: auto;
+            font-size: 1.2rem;
+
+            .myAcc-collapsed {
+                font-size: 1.3rem;
+            }
+
+            .accordion-button:not(.collapsed) {
+                color: $green
+            }
         }
 
     }
@@ -53,5 +63,12 @@
     .faqContainer {
         margin-top: 60.2px;
         width: 100vw;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .faqContainer {
+
+        width: 80vw;
     }
 }

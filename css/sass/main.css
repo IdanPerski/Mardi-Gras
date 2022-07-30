@@ -664,7 +664,7 @@ iframe {
   word-spacing: 2px;
   line-height: 1.5;
   color: #0d0d0d;
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding: 20px;
   border: 2px solid #9453a6;
   width: 80%;
@@ -684,17 +684,30 @@ iframe {
   background-color: #666;
   margin-top: 100px;
   margin-bottom: 150px;
+  font-size: 1.2rem;
 }
 .faqContainer .accordion .accordion-item {
   border: 1px solid #9453a6;
   background-color: rgba(255, 255, 255, 0.9);
   margin: auto;
+  font-size: 1.2rem;
+}
+.faqContainer .accordion .accordion-item .myAcc-collapsed {
+  font-size: 1.3rem;
+}
+.faqContainer .accordion .accordion-item .accordion-button:not(.collapsed) {
+  color: #8cbf3f;
 }
 
 @media only screen and (min-width: 768px) {
   .faqContainer {
     margin-top: 60.2px;
     width: 100vw;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .faqContainer {
+    width: 80vw;
   }
 }
 .PageHeader {
