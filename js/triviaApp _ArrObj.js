@@ -114,12 +114,12 @@ const questions = [
 console.log(theScore)
   
     let triviaPage = document.getElementById('triviaDiv');
-       if(qustCounter === 10  ){
+       if(qustCounter === 10 && theScore < 90 ){
            triviaPage.style.display="none";
         
        }
      
-     else if(theScore==90){
+     else if(theScore==90 ){
               showModal()
               theScore = 0
             }
@@ -194,7 +194,6 @@ function input(key,keyValue){
 function save() {   
   winnerArr.push(triviaWinner)
   triviaWinner = {}
-//   formSent();
  console.log(winnerArr)
   
 }
@@ -204,36 +203,19 @@ function save() {
      let errorMsg = document.getElementById('TriviaErrorMsg');
 
  if(inputs[0].value ===  '' || inputs[1].value ===  '' ||inputs[2].value === ''  ) {
-    errorMsg.innerText = '*Missing details, please fill up the form'   
+    errorMsg.innerText = '*Missing details, please fill up the form';   
  }
 
  else{
-     save()
-       errorMsg.innerText= ''
-       document.location= "../index.html"
+    errorMsg.style.cssText += ';background-color:green !important;'
+    
+    errorMsg.innerText= 'Thank you';
+    save();
+       
+      document.location= "../index.html";
     
  }
 
 }
 
 
-
-
-//  function answerAlert (){
-    
-//     let x = 1
-//     let currectAnswer = questions[qustCounter]
-//         console.log()  
-//     for  (x=1 ; x <= 4;x++ ){
-         
-//     let answer= "answer";
-    
-//     let ansCounter = "."+answer+x
-        
-//           console.log( questions[qustCounter].ansCounter)
-
-//     }
-    
-
-//  }
-//  console.log(answerAlert() )
