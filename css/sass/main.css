@@ -663,7 +663,7 @@ iframe {
     margin-top: 80px;
   }
   .mediaContainer {
-    margin: 60px;
+    margin: 60px auto;
   }
 }
 .faqContainer {
