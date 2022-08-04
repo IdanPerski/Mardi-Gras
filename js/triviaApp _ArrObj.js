@@ -209,10 +209,10 @@ function save() {
  else{
     errorMsg.style.cssText += ';background-color:green !important;'
     
-    errorMsg.innerText= 'Thank you';
+    errorMsg.innerText= 'Your information has been received';
     save();
        
-      document.location= "../index.html";
+    setTimeout(function(){document.location= "../index.html"},3000)
     
  }
 
