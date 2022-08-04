@@ -206,6 +206,9 @@ footer .copyrightText {
   }
 }
 @media only screen and (min-width: 1200px) {
+  .mainContainer .carusel .crsl-imgText {
+    width: 65%;
+  }
   .mainContainer .experiance > div {
     width: 30%;
     justify-content: space-evenly;
@@ -521,7 +524,7 @@ header .divLogo .logo {
     height: 130%;
   }
   .crsl-imgText {
-    top: 365px;
+    top: 300px;
   }
 }
 @media only screen and (min-width: 1400px) {

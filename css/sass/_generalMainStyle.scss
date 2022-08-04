@@ -264,8 +264,11 @@ footer {
 
 @media only screen and (min-width:1200px) {
     .mainContainer {
-
-
+        .carusel {
+            .crsl-imgText {
+                width: 65%;
+            }
+        }
 
         .experiance>div {
             width: 30%;
