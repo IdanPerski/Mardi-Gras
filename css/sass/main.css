@@ -212,9 +212,6 @@ footer .copyrightText {
   }
 }
 @media only screen and (min-width: 1400px) {
-  .mainContainer {
-    width: 80vw;
-  }
   .experiance > div {
     max-width: 320px;
     justify-content: space-evenly;
