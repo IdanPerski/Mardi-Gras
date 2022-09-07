@@ -26,9 +26,10 @@ function save() {
 
 
 function formSent () {
- let formModal =   document.getElementById('formModal')
- let myModal = new bootstrap.Modal(formModal)
- myModal.show();}
+  let formModal =   document.getElementById('formModal')
+  let myModal = new bootstrap.Modal(formModal)
+  myModal.show();
+}
 
 
 const errorMsg = document.getElementById('message');
@@ -41,20 +42,20 @@ inputs[2] = email;
 
 
 function validateForm() {
- 
-
- if(firstName.value ===  '' || lastName.value ===  '' ||textArea.value === '' )  {
-    errorMsg.innerText = '*missing details, please fill up the form'   
- }else if(email.value === '' ||email.value.indexOf('@') == -1 ){
-  errorMsg.innerText = '*Email address invalid';
-  email.focus();
- }
- 
- else{
-     save()
-       errorMsg.innerText = ''
-    
- }
+  if(firstName.value ===  '' || lastName.value ===  '' ||textArea.value === '' ){
+      errorMsg.innerText = '*missing details, please fill up the form'   
+  }
+  else
+  if(email.value === '' ||email.value.indexOf('@') == -1 ){
+    errorMsg.innerText = '*Email address invalid';
+    email.focus();
+  }
+  
+  else{
+      save()
+      errorMsg.innerText = ''
+      
+  }
 
 }
 
