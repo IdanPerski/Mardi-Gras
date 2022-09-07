@@ -8,7 +8,6 @@ let index = 0;
 let formFilled = document.getElementById('formFilled');
 
 function input(key,keyValue){
-
     user[key]=keyValue;
     return user
    
@@ -19,7 +18,7 @@ function save() {
   clientsArr.push(user)
   user = {}
   formSent();
- console.log(clientsArr)
+  console.log(clientsArr)
   
 }
 
@@ -30,6 +29,7 @@ function formSent () {
   let myModal = new bootstrap.Modal(formModal)
   myModal.show();
 }
+
 
 
 const errorMsg = document.getElementById('message');

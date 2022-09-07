@@ -29,10 +29,9 @@ slides.forEach(setSlidePostion);
 
 
 const moveToslide = (track , currentSlide , targetSlide) =>{
-  track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
+    track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
     currentSlide.classList.remove('currentSlide');
     targetSlide.classList.add('currentSlide');
-
 
 }
 
@@ -84,6 +83,8 @@ nextButton.addEventListener('click',e =>{
    updateDots(currentDot, nextDot)
    hideShowArrows(slides, prevButton, nextButton,nextIndex);
 })
+
+
 
 
 //when I click the nav indicators, move to that slide
