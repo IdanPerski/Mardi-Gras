@@ -99,32 +99,29 @@ const questions = [
 
 
  function showModal(){
-     let gameOver =   document.getElementById('gameOver')  
-     let myModal = new bootstrap.Modal(gameOver)
- myModal.show();
+    let gameOver =   document.getElementById('gameOver')  
+    let myModal = new bootstrap.Modal(gameOver)
+    myModal.show();
 
-  
  }
    
 
 
 
  function addQuestion(){
-     let  theScore = score*10;
-console.log(theScore)
+    let  theScore = score*10;
+    console.log(theScore)
   
     let triviaPage = document.getElementById('triviaDiv');
        if(qustCounter === 10 && theScore < 90 ){
-           triviaPage.style.display="none";
-        
-       }
-     
+           triviaPage.style.display="none";  
+       } 
      else if(theScore==90 ){
               showModal()
               theScore = 0
             }
        
-else{  
+            else{  
    
  questionDiv.innerHTML=`
   <div class="col-sm-10 cl-md-6 col-lg-12 triviaImg  mx-auto p-5 cover-image${qustCounter} " id= "triviaDiv" style="transition:0.5s;" >
@@ -170,7 +167,7 @@ function getValue(element){
 }
 
  function socreBoard(){
- let  theScore = score*10;
+    let  theScore = score*10;
     progresScore.ariaValueNow = theScore;
     progresScore.style.width = +theScore+"%";
     progresScore.innerText= +theScore   
@@ -182,7 +179,8 @@ function getValue(element){
 
 
 let  triviaWinner= {}
- let winnerArr = []
+let winnerArr = []
+
 function input(key,keyValue){
 
     triviaWinner[key]=keyValue;
@@ -198,23 +196,21 @@ function save() {
   
 }
 
- function validateTriviaForm() {
-     let inputs = Array.from(document.getElementsByTagName('input'));
-     let errorMsg = document.getElementById('TriviaErrorMsg');
+function validateTriviaForm() {
+    let inputs = Array.from(document.getElementsByTagName('input'));
+    let errorMsg = document.getElementById('TriviaErrorMsg');
 
- if(inputs[0].value ===  '' || inputs[1].value ===  '' ||inputs[2].value === ''  ) {
+    if(inputs[0].value ===  '' || inputs[1].value ===  '' ||inputs[2].value === ''  ) {
     errorMsg.innerText = '*Missing details, please fill up the form';   
- }
+    }
 
- else{
+    else{
     errorMsg.style.cssText += ';background-color:green !important;'
-    
     errorMsg.innerText= 'Your information has been received';
-    save();
-       
+    save();   
     setTimeout(function(){document.location= "../index.html"},3000)
     
- }
+    }
 
 }
 
