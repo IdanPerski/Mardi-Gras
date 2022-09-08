@@ -91,7 +91,6 @@ nextButton.addEventListener('click',e =>{
 
 dotsNav.addEventListener ('click',e=>{
 //what indicator was clicked on?
-
 const targetDot = e.target.closest('button');
 
 if(!targetDot) return
