@@ -208,7 +208,7 @@ function validateTriviaForm() {
     errorMsg.style.cssText += ';background-color:green !important;'
     errorMsg.innerText= 'Your information has been received';
     save();   
-    setTimeout(function(){document.location= "../index.html"},3000)
+    setTimeout(function(){document.location= "./index.html"},3000)
     
     }
 
